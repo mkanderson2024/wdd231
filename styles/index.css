@@ -1,0 +1,222 @@
+/* ----------General Declerations------------ */
+:root {
+    --main-bg-color: #e0e1dd;
+    --heading-bg-color: #588157;
+    --heading-tab-text: #ffffff;
+    --decorative: #a3b18a;
+    --dark-decorative: #344e41;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    padding-left: 20px;
+    border-radius: 1rem;
+    background-color: var(--main-bg-color)
+}
+
+/* ----------Header---------- */
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.name {
+    font-size: 60px;
+}
+
+.header-container {
+    padding-top: 1.5rem;
+}
+
+header {
+    background-color: var(--heading-bg-color);
+    color: var(--heading-tab-text)
+}
+
+.profile-picture {
+    object-fit: cover;
+}
+
+#menu {
+    font-size: 8rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 10px;
+    padding: 0px 0px;
+    position: absolute;
+    top: .50rem;
+    right: 1rem;
+    color: var(--heading-tab-text);
+    background: none;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--alternate-bg);
+    color: var(--heading-tab-text);
+    border-radius: 1rem;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.navigation a {
+    display: flex;
+    color: var(--heading-tab-text);
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a:hover {
+    background-color: var(--heading-tab-text);
+    color: var(--heading-bg-color);
+    border: solid var(--decorative-border) 2px;
+    border-radius: 10rem;
+    margin: 0;
+}
+
+
+.show li {
+    display: grid;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+/* ----------Body---------- */
+h2 {
+    padding-top: 10px;
+}
+
+footer {
+    background-color: var(--heading-bg-color);
+    text-align: center;
+    color: var(--heading-tab-text);
+    padding-top: 1rem;
+}
+
+/* -----------------------Larger Screens---------------------------*/
+
+@media (min-width: 900px) {
+
+    /* ----------Header---------- */
+    h1 {
+        font-family: "kanit";
+        font-size: 60px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        background-color: var(--alternate-bg);
+    }
+
+    /*---------Navigatio Bar---------*/
+    nav {
+        margin-bottom: 0;
+    }
+
+    /* .navgiation {
+        display: grid;
+        grid-template-columns: repeat(4, .75fr)
+    } */
+    .navigation {
+        margin-top: 2rem;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, .75fr);
+        background-color: #333;
+        text-align: center;
+        color: #eee;
+    }
+
+    .navigation li {
+        display: grid
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        list-style-type: none;
+        padding-right: 10px;
+    }
+
+    .navigation a {
+        display: grid;
+        background-color: #333;
+        color: #eee;
+        text-decoration: none;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    /* ----------Main---------- */
+    .container-1 {
+        display: grid;
+        grid-template: auto .75fr auto / auto .50fr auto;
+    }
+
+    .coursework {
+        grid-column: 1/3;
+    }
+
+    .place {
+        grid-column: 3/4;
+    }
+
+    .classes {
+        padding-left: 20px;
+    }
+
+    h3 {
+        background-color: var(--heading-bg-color);
+        color: var(--heading-tab-text);
+        border-radius: .5rem;
+        text-align: left;
+        padding: 10px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+
+    /* .links-container {
+        position: absolute;
+        top: 35%;
+        right: 2%;
+    } */
+}
