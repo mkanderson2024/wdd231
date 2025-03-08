@@ -7,29 +7,27 @@
     --dark-decorative: #344e41;
 }
 
-header,
+header {
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: var(--main-bg-color)
+}
+
 main,
 footer {
     margin: 0 auto;
     padding-bottom: 2rem;
-    padding-left: 20px;
     border-radius: 1rem;
     background-color: var(--main-bg-color)
 }
 
 /* ----------Header---------- */
-
-h1 {
-    font-size: 60px;
-    text-align: center;
-}
-
-.name {
-    font-size: 60px;
+.active {
+    color: yellowgreen
 }
 
 .header-container {
-    padding-top: 1.5rem;
+    display: grid;
 }
 
 header {
@@ -37,8 +35,8 @@ header {
     color: var(--heading-tab-text)
 }
 
-.profile-picture {
-    object-fit: cover;
+img {
+    box-shadow: 0px 0px 5px 5px rgba(29, 28, 28, 0.667);
 }
 
 #menu {
@@ -58,6 +56,15 @@ header {
     content: "≡";
 }
 
+.name {
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+nav {
+    margin-top: 30px;
+}
 
 nav ul {
     display: flex;
@@ -65,7 +72,6 @@ nav ul {
     list-style: none;
     background-color: var(--alternate-bg);
     color: var(--heading-tab-text);
-    border-radius: 1rem;
 }
 
 .navigation ul {
@@ -94,21 +100,28 @@ nav ul {
     color: var(--heading-bg-color);
     border: solid var(--decorative-border) 2px;
     border-radius: 10rem;
-    margin: 0;
-}
-
-
-.show li {
-    display: grid;
+    margin: 0px;
 }
 
 #menu.show::before {
     content: "X";
 }
 
+.profile-picture {
+    position: relative;
+    top: 35px
+}
+
+.show li {
+    display: grid;
+}
+
 /* ----------Body---------- */
-h2 {
-    padding-top: 10px;
+.coursework,
+.place,
+.container-2 {
+    border: 2px solid var(--heading-bg-color);
+    border-radius: .75rem;
 }
 
 footer {
@@ -118,44 +131,53 @@ footer {
     padding-top: 1rem;
 }
 
+h1 {
+    color: var(--dark-decorative);
+    padding-left: 10px;
+}
+
+h2 {
+    background-color: var(--heading-bg-color);
+    color: var(--heading-tab-text);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
 /* -----------------------Larger Screens---------------------------*/
 
 @media (min-width: 900px) {
 
     /* ----------Header---------- */
-    h1 {
-        font-family: "kanit";
-        font-size: 60px;
-    }
 
     #menu {
         display: none;
     }
 
-    header {
+    /* header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
+    } */
 
     nav ul {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         list-style: none;
         background-color: var(--alternate-bg);
+        justify-content: center;
+        margin: 0;
+
     }
 
     /*---------Navigatio Bar---------*/
-    nav {
-        margin-bottom: 0;
+    .active {
+        color: yellowgreen
     }
 
-    /* .navgiation {
-        display: grid;
-        grid-template-columns: repeat(4, .75fr)
-    } */
     .navigation {
-        margin-top: 2rem;
         list-style: none;
         display: grid;
         grid-template-columns: repeat(4, .75fr);
@@ -168,14 +190,6 @@ footer {
         display: grid
     }
 
-    .navigation ul {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        list-style-type: none;
-        padding-right: 10px;
-    }
-
     .navigation a {
         display: grid;
         background-color: #333;
@@ -183,13 +197,13 @@ footer {
         text-decoration: none;
         text-align: center;
         margin: 0;
-
     }
 
     /* ----------Main---------- */
     .container-1 {
         display: grid;
         grid-template: auto .75fr auto / auto .50fr auto;
+        gap: 25px;
     }
 
     .coursework {
@@ -204,19 +218,5 @@ footer {
         padding-left: 20px;
     }
 
-    h3 {
-        background-color: var(--heading-bg-color);
-        color: var(--heading-tab-text);
-        border-radius: .5rem;
-        text-align: left;
-        padding: 10px;
-        margin-right: 25px;
-        margin-bottom: 25px;
-    }
 
-    /* .links-container {
-        position: absolute;
-        top: 35%;
-        right: 2%;
-    } */
 }
