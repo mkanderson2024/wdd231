@@ -8,12 +8,17 @@
 }
 
 header {
-    margin: 0 auto;
+    margin-top: 45px;
     border-radius: 1rem;
     background-color: var(--main-bg-color)
 }
 
-main,
+main {
+    background-color: var(--main-bg-color);
+    border-radius: 1rem;
+    margin: 10px;
+}
+
 footer {
     margin: 0 auto;
     padding-bottom: 2rem;
@@ -23,7 +28,7 @@ footer {
 
 /* ----------Header---------- */
 .active {
-    color: yellowgreen
+    border-left: solid yellowgreen;
 }
 
 .header-container {
@@ -117,11 +122,21 @@ nav ul {
 }
 
 /* ----------Body---------- */
+
 .coursework,
 .place,
 .container-2 {
     border: 2px solid var(--heading-bg-color);
     border-radius: .75rem;
+    margin-top: 10px;
+}
+
+.credits-display {
+    text-align: center;
+}
+
+.filters-container {
+    border-bottom: solid 2px#333;
 }
 
 footer {
@@ -143,14 +158,55 @@ h2 {
     text-align: center;
     padding: 10px;
     margin-top: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 0px
 }
+
+
+h3 {
+    background-color: #333;
+    color: var(--heading-tab-text);
+    padding: 10px;
+    border-radius: .5rem;
+}
+
+.subject-f {
+    margin: 10px;
+    background-color: var(--decorative);
+    color: var(--heading-tab-text);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.subject-t {
+    margin: 10px;
+    background-color: var(--dark-decorative);
+    color: var(--heading-tab-text);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.subjects {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
 
 /* -----------------------Larger Screens---------------------------*/
 
 @media (min-width: 900px) {
 
     /* ----------Header---------- */
+    header {
+        background-color: var(--heading-bg-color);
+        color: var(--heading-tab-text);
+        margin-top: 0px;
+    }
 
     #menu {
         display: none;
@@ -174,7 +230,8 @@ h2 {
 
     /*---------Navigatio Bar---------*/
     .active {
-        color: yellowgreen
+        border-left: none;
+        border-bottom: solid yellowgreen;
     }
 
     .navigation {
@@ -215,7 +272,10 @@ h2 {
     }
 
     .classes {
-        padding-left: 20px;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
     }
 
 
