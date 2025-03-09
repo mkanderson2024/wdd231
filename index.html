@@ -10,6 +10,10 @@
     <title>WDD 231 - Web Frontend Development I - Michael Anderson</title>
     <link rel="stylesheet" href="styles/index.css">
     <script defer src="scripts/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Kanit:wght@100;300;400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -45,6 +49,8 @@
             </section>
             <section class="place">
                 <h2>Utah, USA</h2>
+                <img class="place-picture" src="images/snowy-mountains.webp" alt="snowy mountains" width="300">
+                <p class="place-title">Greatest Snow on Earth</p>
             </section>
         </div>
         <!-- Computer Programming Certificate Container -->
@@ -52,9 +58,9 @@
             <h2>Web and Computer Programming Certificate</h2>
             <div class="filters-container">
                 <div class="subjects">
-                    <h3 id="all">All</h3>
-                    <h3 id="cse">CSE</h3>
-                    <h3 id="wdd">WDD</h3>
+                    <h3 class="filter-Button" id="all">All</h3>
+                    <h3 class="filter-Button" id="cse">CSE</h3>
+                    <h3 class="filter-Button" id="wdd">WDD</h3>
                 </div>
                 <p class="credits-display" id="credits"></p>
             </div>
@@ -65,7 +71,9 @@
     </main>
 
     <footer>
-        <p class="foot-text">© <span id="copyright-year"></span> Michael Anderson - Utah, USA</p>
+        <p class="foot-text">© <span id="copyright-year"></span> Michael Anderson | Utah, USA
+            <img class="flag" src="images/flag.webp" alt="flag" width="45">
+        </p>
         <p id="lastModified">Last Modified: </p>
     </footer>
 </body>

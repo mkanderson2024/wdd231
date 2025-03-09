@@ -26,6 +26,16 @@ footer {
     background-color: var(--main-bg-color)
 }
 
+p {
+    font-family: abel;
+}
+
+h1,
+h2,
+h3 {
+    font-family: kanit;
+}
+
 /* ----------Header---------- */
 .active {
     border-left: solid yellowgreen;
@@ -139,6 +149,12 @@ nav ul {
     border-bottom: solid 2px#333;
 }
 
+.flag {
+    position: relative;
+    top: 7px;
+    left: 5px;
+}
+
 footer {
     background-color: var(--heading-bg-color);
     text-align: center;
@@ -167,6 +183,20 @@ h3 {
     color: var(--heading-tab-text);
     padding: 10px;
     border-radius: .5rem;
+}
+
+.filter-Button:hover {
+    background-color: var(--heading-bg-color);
+}
+
+.place-picture {
+    display: block;
+    margin: 1rem auto;
+}
+
+.place-title {
+    text-align: center;
+    font-family: kanit;
 }
 
 .subject-f {
