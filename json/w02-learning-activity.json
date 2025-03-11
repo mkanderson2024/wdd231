@@ -1,0 +1,38 @@
+{
+    "familyName": "Epic",
+    "movingDate": "03-24-2020",
+    "familyNumber": 6,
+    "brishopricVisit": true,
+    "individuals": [
+        {
+            "name": "Brad Epic",
+            "gender": "Male",
+            "birthDate": "12-02-1990"
+        },
+        {
+            "name": "Elishad Epic",
+            "gender": "Female",
+            "birthDate": "11-20-1990"
+        },
+        {
+            "name": "Chad Epic",
+            "gender": "Male",
+            "birthDate": "3-7-2020"
+        },
+        {
+            "name": "Vlad Epic",
+            "gender": "Male",
+            "birthDate": "5-18-2021"
+        },
+        {
+            "name": "Mishad Epic",
+            "gender": "Female",
+            "birthDate": "10-20-2022"
+        },
+        {
+            "name": "Hailey Epic",
+            "gender": "Female",
+            "birthDate": "01-01-2023"
+        }
+    ]
+}
