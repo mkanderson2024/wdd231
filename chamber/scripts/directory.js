@@ -19,4 +19,6 @@ hambutton.addEventListener('click', () => {
 });
 
 //-------Constants--------
-const 
+const url = "https://github.com/mkanderson2024/wdd231/blob/main/chamber/json/chamber.json";
+const cards = document.querySelector('#business-cards');
+
