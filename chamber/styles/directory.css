@@ -1,0 +1,37 @@
+/* ----------General Declerations------------ */
+:root {
+    --main-bg-color: #eff0ef;
+    --heading-bg-color: #588157;
+    --heading-tab-text: #ffffff;
+    --decorative: #a3b18a;
+    --dark-decorative: #344e41;
+}
+
+header {
+    margin-top: 45px;
+    border-radius: 1rem;
+    background-color: var(--main-bg-color)
+}
+
+main {
+    background-color: var(--main-bg-color);
+    border-radius: 1rem;
+    margin: 10px;
+}
+
+footer {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: var(--main-bg-color)
+}
+
+p {
+    font-family: abel;
+}
+
+h1,
+h2,
+h3 {
+    font-family: kanit;
+}
