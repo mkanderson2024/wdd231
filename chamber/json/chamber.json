@@ -1,0 +1,60 @@
+{
+    "localBusinesses": [
+        {
+            "name": "Corner Conner's Bank",
+            "owner": "Conner Mackley",
+            "address": "2 N Main, Brigham City, UT",
+            "phoneNumber": "(435) 723-3838",
+            "website": "www.ccbank.com",
+            "memberLevel": "3"
+        },
+        {
+            "name": "Bergita's Diner",
+            "owner": "Bergita Wood",
+            "address": "77 S Main, Brigham City, UT",
+            "phoneNumber": "(435) 723-9714",
+            "website": "www.bergitasdiner.com",
+            "memberLevel": "2"
+        },
+        {
+            "name": "Zebs Candies",
+            "owner": "Zebadia Johanson",
+            "address": "27 N Main, Brigham City, UT",
+            "phoneNumber": "(435) 723-8716",
+            "website": "www.zcandies.com",
+            "memberLevel": "1"
+        },
+        {
+            "name": "Big T's Pizza",
+            "owner": "Tyrone Dbrusiack",
+            "address": "8 S Main, Brigham City, UT",
+            "phoneNumber": "(435) 723-4171",
+            "website": "www.bigtpizzas.com",
+            "memberLevel": "3"
+        },
+        {
+            "name": "Gorbichev's Super Market",
+            "owner": "Alexi Gorbichev",
+            "address": "1082 W West Point Drive, Brigham City, UT",
+            "phoneNumber": "(435) 878-1823",
+            "website": "www.gobichevsupermarket.com",
+            "memberLevel": "2"
+        },
+        {
+            "name": "The Hook Fishing Market",
+            "owner": "Chuck Marcus",
+            "address": "334 W 256 N, Brigham City, UT",
+            "phoneNumber": "(435) 695-2340",
+            "website": "www.thehookfish.com",
+            "memberLevel": "1"
+        },
+        {
+            "name": "Page Turner Book store",
+            "owner": "Lacy VanBeuren",
+            "address": "1 S Main, Brigham City, UT",
+            "phoneNumber": "(435) 858-2468",
+            "website": "www.pageturnerbookstore.com",
+            "memberLevel": "1"
+        }
+    ]
+}
