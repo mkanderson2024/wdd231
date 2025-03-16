@@ -1,12 +1,12 @@
 {
-    "localBusinesses": [
+    "members": [
         {
             "name": "Corner Conner's Bank",
             "owner": "Conner Mackley",
             "address": "2 N Main, Brigham City, UT",
             "phoneNumber": "(435) 723-3838",
             "website": "www.ccbank.com",
-            "image": "https://github.com/mkanderson2024/wdd231/blob/main/chamber/images/bank.webp",
+            "imageUrl": "images/bank.webp",
             "memberLevel": "3"
         },
         {
@@ -15,7 +15,7 @@
             "address": "77 S Main, Brigham City, UT",
             "phoneNumber": "(435) 723-9714",
             "website": "www.bergitasdiner.com",
-            "image": "https://github.com/mkanderson2024/wdd231/blob/main/chamber/images/diner.webp",
+            "imageUrl": "images/diner.webp",
             "memberLevel": "2"
         },
         {
@@ -24,7 +24,7 @@
             "address": "27 N Main, Brigham City, UT",
             "phoneNumber": "(435) 723-8716",
             "website": "www.zcandies.com",
-            "image": "https://github.com/mkanderson2024/wdd231/blob/main/chamber/images/candystore.webp",
+            "imageUrl": "images/candystore.webp",
             "memberLevel": "1"
         },
         {
@@ -33,7 +33,7 @@
             "address": "8 S Main, Brigham City, UT",
             "phoneNumber": "(435) 723-4171",
             "website": "www.bigtpizzas.com",
-            "image": "https://github.com/mkanderson2024/wdd231/blob/main/chamber/images/pizzashop.webp",
+            "imageUrl": "images/pizzashop.webp",
             "memberLevel": "3"
         },
         {
@@ -42,7 +42,7 @@
             "address": "1082 W West Point Drive, Brigham City, UT",
             "phoneNumber": "(435) 878-1823",
             "website": "www.gobichevsupermarket.com",
-            "image": "https://github.com/mkanderson2024/wdd231/blob/main/chamber/images/supermarket.webp",
+            "imageUrl": "images/supermarket.webp",
             "memberLevel": "2"
         },
         {
@@ -51,7 +51,7 @@
             "address": "334 W 256 N, Brigham City, UT",
             "phoneNumber": "(435) 695-2340",
             "website": "www.thehookfish.com",
-            "image": "https://github.com/mkanderson2024/wdd231/blob/main/chamber/images/fishmarket.webp",
+            "imageUrl": "images/fishmarket.webp",
             "memberLevel": "1"
         },
         {
@@ -59,8 +59,8 @@
             "owner": "Lacy VanBeuren",
             "address": "1 S Main, Brigham City, UT",
             "phoneNumber": "(435) 858-2468",
-            "website": "www.pageturnerbookstore.com",
-            "image": "https://github.com/mkanderson2024/wdd231/blob/main/chamber/images/bookstore.webp",
+            "website": "www.pageturnerbooks.com",
+            "imageUrl": "images/bookstore.webp",
             "memberLevel": "1"
         }
     ]

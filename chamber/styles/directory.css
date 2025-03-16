@@ -131,6 +131,97 @@ nav ul {
     display: grid;
 }
 
+/* ----------Main---------- */
+.list {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid var(--dark-decorative);
+}
+
+.list h4 {
+    font-family: kanit;
+    padding: 2px;
+    color: var(--bar-color);
+    font-size: 4rem;
+    margin: 2px;
+    font-weight: bold;
+}
+
+.list h5 {
+    font-family: abel;
+    margin: 2px;
+    color: var(--bar-color);
+    font-size: 1rem;
+    padding: 2px;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h4 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+    background-color: var(--decorative);
+}
+
+.menu {
+    margin: 1rem auto;
+    border: 1px solid var(--bar-color);
+    padding: 0.5rem;
+    background-color: var(--dark-decorative);
+    text-align: center;
+}
+
+.menu button {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid section {
+    background-color: var(--heading-bg-color);
+    max-width: 400px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10rem;
+    border-top: 50px solid var(--dark-decorative)
+}
+
+.grid h4 {
+    font-family: kanit;
+    color: var(--heading-tab-text);
+    font-size: 40px;
+}
+
+.grid h5 {
+    font-family: kanit;
+    margin: 2px;
+    color: var(--heading-tab-text);
+    font-size: 20px;
+    padding: 2px;
+}
+
 /* ----------Footer---------- */
 .footer-container {
     flex: 1 1 350px;
