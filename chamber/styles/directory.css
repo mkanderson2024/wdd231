@@ -10,7 +10,9 @@
 header {
     margin-top: 45px;
     border-radius: 1rem;
-    background-color: var(--main-bg-color)
+    background-color: var(--heading-bg-color);
+    color: var(--heading-tab-text);
+    padding: 1rem;
 }
 
 main {
@@ -21,9 +23,10 @@ main {
 
 footer {
     margin: 0 auto;
-    padding-bottom: 2rem;
+    padding: 1rem;
     border-radius: 1rem;
-    background-color: var(--main-bg-color)
+    background-color: var(--heading-bg-color);
+    color: var(--heading-tab-text)
 }
 
 p {
@@ -34,4 +37,87 @@ h1,
 h2,
 h3 {
     font-family: kanit;
+}
+
+img {
+    box-shadow: 0px 0px 5px 5px rgba(29, 28, 28, 0.667);
+}
+
+/*----------Header---------- */
+#menu {
+    font-size: 8rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 10px;
+    padding: 0px 0px;
+    position: absolute;
+    top: .50rem;
+    right: 1rem;
+    color: var(--heading-tab-text);
+    background: none;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.name {
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-family: kanit;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--alternate-bg);
+    color: var(--heading-tab-text);
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.navigation a {
+    display: flex;
+    color: var(--heading-tab-text);
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a:hover {
+    background-color: var(--heading-tab-text);
+    color: var(--dark-decorative);
+    border: solid var(--decorative-border) 2px;
+    border-radius: 10rem;
+    margin: 0px;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.profile-picture {
+    position: relative;
+    top: 35px
+}
+
+.show li {
+    display: grid;
 }
