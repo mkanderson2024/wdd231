@@ -54,7 +54,7 @@ img {
     display: grid;
     position: relative;
     right: 8rem;
-    top: 4rem;
+    top: -4rem;
 }
 
 .title-container {
