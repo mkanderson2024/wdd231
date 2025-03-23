@@ -137,10 +137,28 @@ nav ul {
 .weather-forcast,
 .rand-store h5 {
     background-color: var(--decorative);
+    color: var(--heading-tab-text);
     width: 100%;
     flex-wrap: wrap;
-    margin: 5px;
+    font-family: abel
 }
+
+.weather-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5px;
+    column-gap: 5px;
+}
+
+.weather-icon {
+    background-color: lightblue;
+}
+
+.current-weather h5 {
+    color: var(--bar-color);
+    margin: 4px;
+}
+
 
 /* Home info grid */
 .hero {
