@@ -134,24 +134,15 @@ nav ul {
 /* ----------Main---------- */
 .events,
 .current-weather,
-.weather-forcast {
+.weather-forcast,
+.rand-store h5 {
     background-color: var(--decorative);
-    margin: 10px;
+    width: 100%;
+    flex: wrap;
+    margin: 5px;
 }
 
 /* Home info grid */
-.events {
-    grid-column: 1 / 7
-}
-
-.current-weather {
-    grid-column: 7 / 10;
-}
-
-.weather-forcast {
-    grid-column: 10/14
-}
-
 .hero {
     margin: 0 auto;
     width: 100%;
@@ -160,13 +151,18 @@ nav ul {
 }
 
 .home-info {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.rand-store img {
+    display: block;
+    margin: 1rem auto;
+}
 
-
-h6 {
+h6,
+.rand-store h4 {
     background-color: var(--heading-bg-color);
     color: var(--heading-tab-text);
     font-family: kanit;
@@ -175,6 +171,28 @@ h6 {
     padding-left: 10px;
 }
 
+.rand-store {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--heading-tab-text);
+    font-family: kanit;
+    font-size: 20px;
+    margin-top: 0px;
+    padding-left: 10px;
+}
+
+.rand-store section {
+    flex: 1 1 150px;
+    /*  Stretching: */
+    flex: 0 1 200px;
+    /*  No stretching: */
+    margin: 5px;
+    background-color: var(--decorative);
+    padding: 10px;
+}
+
+/* End Home Info */
 .list {
     display: flex;
     flex-direction: column;
@@ -333,6 +351,60 @@ h6 {
         text-decoration: none;
         text-align: center;
     }
+
+    /* ----------Main---------- */
+    .events,
+    .current-weather,
+    .weather-forcast {
+        background-color: var(--decorative);
+        margin: 10px;
+        flex: 1 1 150px;
+        /*  Stretching: */
+        flex: 0 1 150px;
+        /*  No stretching: */
+        margin: 5px;
+    }
+
+    /* Home info grid */
+    .events {
+        grid-column: 1 / 7;
+    }
+
+    .current-weather {
+        grid-column: 7 / 10;
+    }
+
+    .weather-forcast {
+        grid-column: 10/14
+    }
+
+    .home-info {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .rand-store {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: var(--heading-tab-text);
+        font-family: kanit;
+        font-size: 20px;
+        margin-top: 0px;
+        padding-left: 10px;
+    }
+
+    .rand-store section {
+        flex: 1 1 150px;
+        /*  Stretching: */
+        flex: 0 1 200px;
+        /*  No stretching: */
+        margin: 10px;
+        background-color: var(--decorative);
+        padding: 10px;
+    }
+
+    /* ------------------------ */
 
 
 }
