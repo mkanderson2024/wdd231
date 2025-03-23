@@ -19,9 +19,9 @@ fetch(apiUrl)
     });
 
 const displayWeatherData = (weatherInfo) => {
-    const iconCode = weatherInfo.weather[0].icon;
+    let iconCode = weatherInfo.weather[0].icon;
     //Create elements
-    let iconCard = document.createElement("div")
+    let iconImage = document.createElement("img")
     let card = document.createElement("section");
     let temp = document.createElement("h5");
     let cloud = document.createElement("h5");
@@ -31,7 +31,7 @@ const displayWeatherData = (weatherInfo) => {
     let sunrise = document.createElement("h5");
     let sunset = document.createElement("h5");
     //-----Set Icon-----
-    // iconCard.innerHTML = displayWeatherIcon(weatherInfo);
+    displayIcon(iconCode)
 
     //-----Set text context-----
 
@@ -70,7 +70,6 @@ const displayWeatherData = (weatherInfo) => {
     card.appendChild(sunset)
     // card.appendChile(sunrise)
 
-    weatherIcon.appendChild(iconCard)
     weatherCard.appendChild(card)
 }
 
@@ -91,6 +90,6 @@ function capitalizeWords(str) {
 
 function displayIcon(iconCode) {
     const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-    const weatherIcon = document.getElementById('weather-icon'); // Assuming you have an img element with this ID
+    const weatherIcon = document.getElementById('weather-icon');
     weatherIcon.src = iconUrl;
 }
