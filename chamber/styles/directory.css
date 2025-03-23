@@ -357,7 +357,6 @@ h6,
     .current-weather,
     .weather-forcast {
         background-color: var(--decorative);
-        margin: 10px;
         flex: 1 1 150px;
         /*  Stretching: */
         flex: 0 1 150px;
@@ -381,6 +380,7 @@ h6,
     .home-info {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+        column-gap: 10px;
     }
 
     .rand-store {
@@ -397,7 +397,7 @@ h6,
     .rand-store section {
         flex: 1 1 150px;
         /*  Stretching: */
-        flex: 0 1 200px;
+        flex: 0 1 300px;
         /*  No stretching: */
         margin: 10px;
         background-color: var(--decorative);
