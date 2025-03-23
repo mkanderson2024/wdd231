@@ -134,13 +134,13 @@ nav ul {
 /* ----------Main---------- */
 .events,
 .current-weather,
-.weather-forcast,
-.rand-store h5 {
+.weather-forcast {
     background-color: var(--decorative);
     color: var(--heading-tab-text);
     width: 100%;
     flex-wrap: wrap;
-    font-family: abel
+    font-family: abel;
+    margin: 0px;
 }
 
 .weather-container {
@@ -152,11 +152,14 @@ nav ul {
 
 .weather-icon {
     background-color: lightblue;
+    display: block;
+    margin: 0 auto;
 }
 
 .current-weather h5 {
     color: var(--bar-color);
     margin: 4px;
+    font-weight: bold;
 }
 
 
@@ -177,16 +180,25 @@ nav ul {
 .rand-store img {
     display: block;
     margin: 1rem auto;
+    border-bottom: solid var(--decorative);
 }
 
 h6,
 .rand-store h4 {
-    background-color: var(--heading-bg-color);
+    background-color: var(--dark-decorative);
     color: var(--heading-tab-text);
     font-family: kanit;
     font-size: 20px;
     margin-top: 0px;
     padding-left: 10px;
+}
+
+.rand-store h5 {
+    color: var(--heading-tab-text);
+    width: 100%;
+    flex-wrap: wrap;
+    font-family: abel;
+    margin: 0px;
 }
 
 .rand-store {
@@ -206,7 +218,7 @@ h6,
     flex: 0 1 200px;
     /*  No stretching: */
     margin: 5px;
-    background-color: var(--decorative);
+    background-color: var(--heading-bg-color);
     padding: 10px;
 }
 
@@ -374,7 +386,6 @@ h6,
     .events,
     .current-weather,
     .weather-forcast {
-        background-color: var(--decorative);
         flex: 1 1 150px;
         /*  Stretching: */
         flex: 0 1 150px;
@@ -418,7 +429,6 @@ h6,
         flex: 0 1 300px;
         /*  No stretching: */
         margin: 10px;
-        background-color: var(--decorative);
         padding: 10px;
     }
 
