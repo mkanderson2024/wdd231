@@ -138,7 +138,7 @@ nav ul {
 .rand-store h5 {
     background-color: var(--decorative);
     width: 100%;
-    flex: wrap;
+    flex-wrap: wrap;
     margin: 5px;
 }
 
