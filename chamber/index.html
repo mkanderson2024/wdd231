@@ -14,15 +14,18 @@
     <meta property="og:image" content="https://mkanderson2024.github.io/wdd231/chamber/images/thumbnail.webp">
     <meta property="og:url" content="https://mkanderson2024.github.io/wdd231/chamber/directory.html">
     <meta name="twitter:card" content="summary_large_image">
-    <!--Styles and Script Links-->
+    <!--Styles Links-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
-    <script defer src="scripts/directory.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Kanit:wght@100;300;400&display=swap"
         rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
+    <!--Script Links-->
+    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/weather.js"></script>
+
 </head>
 
 <body>
@@ -38,7 +41,7 @@
                 <nav>
                     <ul class="navigation">
                         <li><a href="#" class="active" title="home">Home</a></li>
-                        <li><a href="#" title="Directory">Directory</a></li>
+                        <li><a href="directory.html" title="Directory">Directory</a></li>
                         <li><a href="#" title="join">Join</a></li>
                         <li><a href="#" title="discover">Discover</a></li>
                     </ul>
@@ -48,7 +51,20 @@
     </header>
 
     <main>
-
+        <div class="hero-container"><img class="hero" src="images/hero.webp" alt="brigham city court house"
+                width="1920">
+        </div>
+        <div class="home-info">
+            <section class="events">
+                <h6>Events</h6>
+            </section>
+            <section class="current-weather">
+                <h6>Current Weather</h6>
+            </section>
+            <section class="weather-forcast">
+                <h6>Weather Forecast</h6>
+            </section>
+        </div>
     </main>
 
     <footer>

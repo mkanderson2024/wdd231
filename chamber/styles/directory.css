@@ -132,6 +132,49 @@ nav ul {
 }
 
 /* ----------Main---------- */
+.events,
+.current-weather,
+.weather-forcast {
+    background-color: var(--decorative);
+    margin: 10px;
+}
+
+/* Home info grid */
+.events {
+    grid-column: 1 / 7
+}
+
+.current-weather {
+    grid-column: 7 / 10;
+}
+
+.weather-forcast {
+    grid-column: 10/14
+}
+
+.hero {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.home-info {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+
+h6 {
+    background-color: var(--heading-bg-color);
+    color: var(--heading-tab-text);
+    font-family: kanit;
+    font-size: 20px;
+    margin-top: 0px;
+    padding-left: 10px;
+}
+
 .list {
     display: flex;
     flex-direction: column;
