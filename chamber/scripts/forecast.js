@@ -1,6 +1,6 @@
 const apiForecastKey = "d862572dba4bd221df68a15e28f380a7";
-const city = "Brigham City";
-const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiForecastKey}&units=imperial`;
+const cityForecast = "Brigham City";
+const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?q=${cityForecast}&appid=${apiForecastKey}&units=imperial`;
 
 fetch(urlForecast)
     .then(response => response.json())
@@ -13,7 +13,7 @@ fetch(urlForecast)
         console.error("Error fetching data:", error);
     });
 
-const forecastList = data.list;
+const forecastList = forecastData.list;
 forecastList.forEach(forecast => {
     const dateTime = new Date(forecast.dt * 1000); // Convert timestamp to date
     const temperature = forecast.main.temp;
