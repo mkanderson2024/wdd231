@@ -127,7 +127,7 @@ nav ul {
 }
 
 .active {
-    border-left: solid yellowgreen;
+    border-left: solid 10px yellowgreen;
 }
 
 .show li {
