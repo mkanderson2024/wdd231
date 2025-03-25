@@ -1,8 +1,8 @@
-const apiKey = "d862572dba4bd221df68a15e28f380a7";
+const apiForecastKey = "d862572dba4bd221df68a15e28f380a7";
 const city = "Brigham City";
-const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
+const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiForecastKey}&units=imperial`;
 
-fetch(url)
+fetch(urlForecast)
     .then(response => response.json())
     .then(forecastData => {
         // Process the forecast data
