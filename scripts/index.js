@@ -126,22 +126,78 @@ cseLink.addEventListener("click", () => {
 });
 
 function createClassCard(filteredSubject) {
+    idNumber = 0;
     creditsList = [];
     filteredSubject.forEach(subject => {
         let completeCheck = subject.completed
         let card = document.createElement("section");
         let classSubject = document.createElement("div");
+        let dialogBox = document.createElement("dialog");
         let credit = subject.credits;
+        let classTitle = document.createElement("h4");
+        let credits = document.createElement("h5");
+        let certificate = document.createElement("h5");
+        let description = document.createElement("p");
+        let technology = document.createElement("h5");
+        let openButton = document.createElement("button")
+        let closeButton = document.createElement("button")
+        idNumber += 1;
+
+
+        //Button Creation
+        classSubject.className = "class-buttons";
 
         if (completeCheck == true) {
-            classSubject.innerHTML = `<p class="subject-t"> ${subject.subject} ${subject.number}</>`
-            creditsList.push(credit)
+            openButton.textContent = `${subject.subject} ${subject.number}`
+            openButton.id = `openButton${idNumber}`
+            openButton.className = "open-button-t"
+            classSubject.appendChild(openButton)
+            creditsList.push(credit);
+            console.log(openButton.id)
         }
         else {
-            classSubject.innerHTML = `<p class="subject-f"> ${subject.subject} ${subject.number}</>`;
+            openButton.textContent = `${subject.subject} ${subject.number}`
+            openButton.id = `openButton${idNumber}`
+            openButton.className = "open-button-f"
+            classSubject.appendChild(openButton)
+            console.log(openButton.id)
         }
+        // Original Text For Classes
+        // if (completeCheck == true) {
+        //     classSubject.innerHTML = `<p class="subject-t"> ${subject.subject} ${subject.number}</>`
+        //     creditsList.push(credit)
+        // }
+        // else {
+        //     classSubject.innerHTML = `<p class="subject-f"> ${subject.subject} ${subject.number}</>`;
+        // }
 
+        closeButton.textContent = `Close`
+        closeButton.id = `dialogCloseButton${idNumber}`
+
+        //Modal Creation
+        dialogBox.id = `dialogBoxText${idNumber}`;
+        dialogBox.className = "dialogbox";
+
+        classTitle.textContent = `${subject.title}`;
+        credits.textContent = `${subject.credits} Credits`;
+        certificate.textContent = `Certificate ${subject.certificate}`;
+        description.textContent = `${subject.description}`;
+        technology.textContent = `Technology: ${subject.technology}`;
+
+
+
+        //Appending card
         card.appendChild(classSubject);
+        card.appendChild(dialogBox);
+
+        //Append modal
+        dialogBox.appendChild(classTitle);
+        dialogBox.appendChild(closeButton);
+        dialogBox.appendChild(credits);
+        dialogBox.appendChild(certificate);
+        dialogBox.appendChild(description);
+        dialogBox.appendChild(technology);
+
 
 
         document.querySelector(".classes").appendChild(card);
@@ -150,4 +206,63 @@ function createClassCard(filteredSubject) {
     let creditsEarned = `Credits earned from completed classes completed: ${creditsSum}`
     const creditAmount = document.getElementById("credits");
     creditAmount.innerHTML = creditsEarned;
+
+    const openButton = document.querySelector("#openButton")
+    const dialogBoxText = document.querySelector("#dialogBoxText");
+    const dialogCloseButton = document.querySelector("#dialogCloseButton");
+
+    // ========================Dialog Buttons=========================
+    // Class Button 1
+    openButton1.addEventListener("click", () => {
+        dialogBoxText1.showModal();
+    });
+
+    dialogCloseButton1.addEventListener("click", () => {
+        dialogBoxText1.close();
+    });
+    // Class Button 2
+    openButton2.addEventListener("click", () => {
+        dialogBoxText2.showModal();
+    });
+
+    dialogCloseButton2.addEventListener("click", () => {
+        dialogBoxText2.close();
+    });
+
+    // Class Button 3
+    openButton3.addEventListener("click", () => {
+        dialogBoxText3.showModal();
+    });
+
+    dialogCloseButton3.addEventListener("click", () => {
+        dialogBoxText3.close();
+    });
+
+    // Class Button 4
+    openButton4.addEventListener("click", () => {
+        dialogBoxText4.showModal();
+    });
+
+    dialogCloseButton4.addEventListener("click", () => {
+        dialogBoxText4.close();
+    });
+
+    // Class Button 5
+    openButton5.addEventListener("click", () => {
+        dialogBoxText5.showModal();
+    });
+
+    dialogCloseButton5.addEventListener("click", () => {
+        dialogBoxText5.close();
+    });
+
+    // Class Button 6
+    openButton6.addEventListener("click", () => {
+        dialogBoxText6.showModal();
+    });
+
+    dialogCloseButton6.addEventListener("click", () => {
+        dialogBoxText6.close();
+    });
 };
+

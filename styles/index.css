@@ -134,6 +134,10 @@ nav ul {
 
 /* ----------Body---------- */
 
+.class-buttons {
+    text-align: center;
+}
+
 .coursework,
 .place,
 .container-2 {
@@ -144,6 +148,33 @@ nav ul {
 
 .credits-display {
     text-align: center;
+}
+
+dialog {
+    background-color: var(--decorative);
+    border-radius: .25rem;
+    margin-left: 10px auto;
+    margin-right: 10px auto;
+    padding: 1rem;
+    text-align: left;
+    max-width: 700px;
+}
+
+dialog button {
+    position: absolute;
+    top: 45px;
+    right: 25px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0/ 0.5)
+}
+
+h4 {
+    background-color: var(--dark-decorative);
+    color: var(--heading-tab-text);
+    padding: 10px;
+    border-radius: .25rem;
 }
 
 .filters-container {
@@ -186,9 +217,12 @@ h3 {
     border-radius: .5rem;
 }
 
-.filter-Button:hover {
+.filter-Button:hover,
+.open-button-t:hover,
+.open-button-f:hover {
     background-color: var(--heading-bg-color);
 }
+
 
 .place-picture {
     display: block;
@@ -200,22 +234,23 @@ h3 {
     font-family: kanit;
 }
 
-.subject-f {
+.open-button-f {
     margin: 10px;
     background-color: var(--decorative);
     color: var(--heading-tab-text);
     border-radius: .5rem;
     text-align: center;
-    padding: 1rem;
+    padding: 20px 100px;
 }
 
-.subject-t {
+.open-button-t {
     margin: 10px;
     background-color: var(--dark-decorative);
     color: var(--heading-tab-text);
     border-radius: .5rem;
     text-align: center;
-    padding: 1rem;
+    padding: 20px 100px;
+    ;
 }
 
 .subjects {
