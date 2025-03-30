@@ -51,55 +51,82 @@
 
     <main>
         <h1>Membership Application</h1>
-        <form method="get" action="thankyou.html" class="application">
-            <!-- Name-->
-            <fieldset>
-                <legend>Name and Title</legend>
-                <label for="first-name">First Name: <input type="text" required id="first-name" name="first-name"
-                        autocomplete="given-name" title="Enter first name here" placeholder="John">
-                </label>
+        <div class="main-container">
+            <div class="application-container"></div>
+            <section class="application-form">
+                <form method="get" action="thankyou.html" class="application">
+                    <!-- Name-->
+                    <fieldset>
+                        <legend>Name and Title</legend>
+                        <label for="first-name">First Name: <input type="text" required id="first-name"
+                                name="first-name" autocomplete="given-name" title="Enter first name here"
+                                placeholder="John">
+                        </label>
 
-                <label for="last-name">Last Name: <input type="text" required id="last-name" name="last-name"
-                        autocomplete="family-name" title="Enter last name here" placeholder="Doe">
-                </label>
+                        <label for="last-name">Last Name: <input type="text" required id="last-name" name="last-name"
+                                autocomplete="family-name" title="Enter last name here" placeholder="Doe">
+                        </label>
 
-                <label for="organization-title">Oranization Title: <input type="text" id="organization-title"
-                        autocomplete="organization-title" name="organization-title"
-                        title="Enter organization title here" placeholder="Owner" pattern="^[A-Za-z0-9\- ]{7,}$">
-                </label>
-            </fieldset>
-            <!-- Contact -->
-            <fieldset>
-                <legend>Contact Info</legend>
-                <label for="email">Email: <input type="email" required id="email" name="email" autocomplete="email"
-                        title="enter email address here" placeholder="example@gmail.com">
-                </label>
+                        <label for="organization-title">Oranization Title: <input type="text" id="organization-title"
+                                autocomplete="organization-title" name="organization-title"
+                                title="Enter organization title here" placeholder="Owner"
+                                pattern="^[A-Za-z0-9\- ]{7,}$">
+                        </label>
+                    </fieldset>
+                    <!-- Contact -->
+                    <fieldset>
+                        <legend>Contact Info</legend>
+                        <label for="email">Email: <input type="email" required id="email" name="email"
+                                autocomplete="email" title="enter email address here" placeholder="example@gmail.com">
+                        </label>
 
-                <label for="mobile-number">Mobile Number: <input type="tel" required id="mobile-number"
-                        name="mobile-number" autocomplete="tel"></label>
-            </fieldset>
-            <!-- Business -->
-            <fieldset>
-                <legend>* Business / Organization Name</legend>
-                <label for="business-organization-name">Name: <input type="text" required
-                        id="business-organization-name" autocomplete="organization"
-                        name="business-organization-name"></label>
-            </fieldset>
-            <fieldset>
-                <legend>* Membership Level</legend>
-                <label for="nonprofit"><input type="radio" id="nonprofit" name="nonprofit" value="nonprofit"
-                        required>Non Profit</label>
-                <label for="bronze"><input type="radio" id="bronze" name="bronze" value="bronze" required>Bronze</label>
-                <label for="silver"><input type="radio" id="silver" name="silver" value="silver" required>Silver</label>
-                <label for="gold"><input type="radio" id="gold" name="gold" value="gold" required>Gold</label>
-            </fieldset>
-            <fieldset>
-                <legend>Business/Organization Description</legend>
-                <label for="description"><textarea id="description" name="description" rows="6" cols="50"
-                        title="Describe your business or organization here">Enter Description Here</textarea></label>
-            </fieldset>
-            <label for="submit"><input type="submit" id="submit" value="Send Application"></label>
-        </form>
+                        <label for="mobile-number">Mobile Number: <input type="tel" required id="mobile-number"
+                                name="mobile-number" autocomplete="tel"></label>
+                    </fieldset>
+                    <!-- Business -->
+                    <fieldset>
+                        <legend>* Business / Organization Name</legend>
+                        <label for="business-organization-name">Name: <input type="text" required
+                                id="business-organization-name" autocomplete="organization"
+                                name="business-organization-name"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>* Membership Level</legend>
+                        <label for="nonprofit"><input type="radio" id="nonprofit" name="nonprofit" value="nonprofit"
+                                required>Non Profit</label>
+                        <label for="bronze"><input type="radio" id="bronze" name="bronze" value="bronze"
+                                required>Bronze</label>
+                        <label for="silver"><input type="radio" id="silver" name="silver" value="silver"
+                                required>Silver</label>
+                        <label for="gold"><input type="radio" id="gold" name="gold" value="gold" required>Gold</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business/Organization Description</legend>
+                        <label for="description"><textarea id="description" name="description" rows="6" cols="50"
+                                title="Describe your business or organization here">Enter Description Here</textarea></label>
+                    </fieldset>
+                    <label for="submit"><input type="submit" id="submit" value="Send Application"></label>
+                </form>
+            </section>
+            <div class="membership-container">
+                <section class="membership-level">
+                    <h6>Non-Profit Membership Level</h6>
+                    <button class="open-button">Learn More</button>
+                </section>
+                <section class="membership-level">
+                    <h6>Bronze Membership Level</h6>
+                    <button class="open-button">Learn More</button>
+                </section>
+                <section class="membership-level">
+                    <h6>Silver Membership Level</h6>
+                    <button class="open-button">Learn More</button>
+                </section>
+                <section class="membership-level">
+                    <h6>Gold Membership Level</h6>
+                    <button class="open-button">Learn More</button>
+                </section>
+            </div>
+        </div>
     </main>
 
     <footer>

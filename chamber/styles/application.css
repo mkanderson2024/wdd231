@@ -67,3 +67,10 @@ textarea {
     resize: vertical;
     width: 92%
 }
+
+@media (min-width: 900px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: ;
+    }
+}
