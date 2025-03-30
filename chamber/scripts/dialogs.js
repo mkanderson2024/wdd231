@@ -35,11 +35,18 @@ dialogCloseButton4.addEventListener("click", () => {
     dialogBoxText4.close();
 });
 
-const now = new Date();
-const hours = now.getHours();
-const minutes = now.getMinutes();
-const seconds = now.getSeconds();
+document.addEventListener('DOMContentLoaded', function () {
+    const timestampInput = document.getElementById('timestamp');
+    const now = new Date();
+    const timestamp = now.toLocaleString();
 
-document.getElementBdocument.getElementById("timeStamp").innerHTML = `Current time: ${hours}:${minutes}:${seconds}`
+    timestampInput.value = timestamp;
+});
+
+document.getElementById('application-form-main').addEventListener('submit', function () {
+    const now = new Date();
+    const timestamp = now.toLocaleString();
+    document.getElementById('timestamp').value = timestamp;
+});
 
 
