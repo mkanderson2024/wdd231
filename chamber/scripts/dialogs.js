@@ -34,3 +34,12 @@ openButton4.addEventListener("click", () => {
 dialogCloseButton4.addEventListener("click", () => {
     dialogBoxText4.close();
 });
+
+const now = new Date();
+const hours = now.getHours();
+const minutes = now.getMinutes();
+const seconds = now.getSeconds();
+
+document.getElementBdocument.getElementById("timeStamp").innerHTML = `Current time: ${hours}:${minutes}:${seconds}`
+
+

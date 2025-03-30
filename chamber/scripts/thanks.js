@@ -17,6 +17,9 @@ console.log(myInfo);
 // console.log(myInfo.get('email'));
 let title = '';
 let orgtitle = myInfo.get('organization-title')
+let timeStamp = myInfo.get('timestamp')
+console.log(timeStamp)
+
 if (orgtitle == 'null')
     title = '';
 else
