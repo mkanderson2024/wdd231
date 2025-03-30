@@ -156,7 +156,10 @@ nav ul {
     margin: 0 auto;
 }
 
-.current-weather h5 {
+
+
+.current-weather h5,
+.threeday-forecast {
     color: var(--bar-color);
     margin: 4px;
     font-weight: bold;

@@ -1,0 +1,49 @@
+:root {
+    --main-bg-color: #eff0ef;
+    --heading-bg-color: #588157;
+    --heading-tab-text: #ffffff;
+    --decorative: #a3b18a;
+    --dark-decorative: #344e41;
+    --bar-color: #333;
+}
+
+.application legend {
+    padding: 0 .5rem;
+    font-family: "kanit";
+    font-size: 20px;
+}
+
+.application input[type="submit"] {
+    padding: .8rem;
+    margin: 2rem 2% 2rem 25%;
+    width: 100%;
+    max-width: 200px;
+    background-color: var(--heading-bg-color);
+    color: var(--heading-tab-text);
+    border-radius: 1rem;
+}
+
+.applicatoin input[type="textarea"] {
+    width: 92%;
+}
+
+.application input[type="text"] {
+    display: block;
+    padding: .75rem;
+    width: 92%;
+}
+
+.application input .application input:hover[type="submit"] {
+    background-color: darkgreen;
+    color: white;
+}
+
+.application label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+main {
+    max-width: 450px;
+}

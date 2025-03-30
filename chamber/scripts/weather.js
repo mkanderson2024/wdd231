@@ -10,6 +10,7 @@ fetch(apiUrl)
     .then(response => response.json())
     .then(weatherData => {
         // Process and display weather data
+        console.log("Weather Data")
         console.log(weatherData);
         displayWeatherData(weatherData)
 
