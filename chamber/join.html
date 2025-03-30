@@ -25,6 +25,7 @@
     <link rel="icon" href="images/favicon.ico">
     <!--Script Links-->
     <script defer src="scripts/footer.js"></script>
+    <script defer src="scripts/dialogs.js"></script>
 </head>
 
 <body>
@@ -50,80 +51,125 @@
     </header>
 
     <main>
-        <h1>Membership Application</h1>
         <div class="main-container">
-            <div class="application-container"></div>
-            <section class="application-form">
-                <form method="get" action="thankyou.html" class="application">
-                    <!-- Name-->
-                    <fieldset>
-                        <legend>Name and Title</legend>
-                        <label for="first-name">First Name: <input type="text" required id="first-name"
-                                name="first-name" autocomplete="given-name" title="Enter first name here"
-                                placeholder="John">
-                        </label>
+            <div class="application-container">
+                <h1>Membership Application</h1>
+                <section class="application-form">
+                    <form method="get" action="thankyou.html" class="application">
+                        <!-- Name-->
+                        <fieldset>
+                            <legend>Name and Title</legend>
+                            <label for="first-name">First Name: <input type="text" required id="first-name"
+                                    name="first-name" autocomplete="given-name" title="Enter first name here"
+                                    placeholder="John">
+                            </label>
 
-                        <label for="last-name">Last Name: <input type="text" required id="last-name" name="last-name"
-                                autocomplete="family-name" title="Enter last name here" placeholder="Doe">
-                        </label>
+                            <label for="last-name">Last Name: <input type="text" required id="last-name"
+                                    name="last-name" autocomplete="family-name" title="Enter last name here"
+                                    placeholder="Doe">
+                            </label>
 
-                        <label for="organization-title">Oranization Title: <input type="text" id="organization-title"
-                                autocomplete="organization-title" name="organization-title"
-                                title="Enter organization title here" placeholder="Owner"
-                                pattern="^[A-Za-z0-9\- ]{7,}$">
-                        </label>
-                    </fieldset>
-                    <!-- Contact -->
-                    <fieldset>
-                        <legend>Contact Info</legend>
-                        <label for="email">Email: <input type="email" required id="email" name="email"
-                                autocomplete="email" title="enter email address here" placeholder="example@gmail.com">
-                        </label>
+                            <label for="organization-title">Oranization Title: <input type="text"
+                                    id="organization-title" autocomplete="organization-title" name="organization-title"
+                                    title="Enter organization title here" placeholder="Owner"
+                                    pattern="^[A-Za-z0-9\- ]{7,}$">
+                            </label>
+                        </fieldset>
+                        <!-- Contact -->
+                        <fieldset>
+                            <legend>Contact Info</legend>
+                            <label for="email">Email: <input type="email" required id="email" name="email"
+                                    autocomplete="email" title="enter email address here"
+                                    placeholder="example@gmail.com">
+                            </label>
 
-                        <label for="mobile-number">Mobile Number: <input type="tel" required id="mobile-number"
-                                name="mobile-number" autocomplete="tel"></label>
-                    </fieldset>
-                    <!-- Business -->
-                    <fieldset>
-                        <legend>* Business / Organization Name</legend>
-                        <label for="business-organization-name">Name: <input type="text" required
-                                id="business-organization-name" autocomplete="organization"
-                                name="business-organization-name"></label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>* Membership Level</legend>
-                        <label for="nonprofit"><input type="radio" id="nonprofit" name="nonprofit" value="nonprofit"
-                                required>Non Profit</label>
-                        <label for="bronze"><input type="radio" id="bronze" name="bronze" value="bronze"
-                                required>Bronze</label>
-                        <label for="silver"><input type="radio" id="silver" name="silver" value="silver"
-                                required>Silver</label>
-                        <label for="gold"><input type="radio" id="gold" name="gold" value="gold" required>Gold</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Business/Organization Description</legend>
-                        <label for="description"><textarea id="description" name="description" rows="6" cols="50"
-                                title="Describe your business or organization here">Enter Description Here</textarea></label>
-                    </fieldset>
-                    <label for="submit"><input type="submit" id="submit" value="Send Application"></label>
-                </form>
+                            <label for="mobile-number">Mobile Number: <input type="tel" required id="mobile-number"
+                                    name="mobile-number" autocomplete="tel"></label>
+                        </fieldset>
+                        <!-- Business -->
+                        <fieldset>
+                            <legend>* Business / Organization Name</legend>
+                            <label for="business-organization-name">Name: <input type="text" required
+                                    id="business-organization-name" autocomplete="organization"
+                                    name="business-organization-name"></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>* Membership Level</legend>
+                            <label for="nonprofit"><input type="radio" id="nonprofit" name="nonprofit" value="nonprofit"
+                                    required>Non Profit</label>
+                            <label for="bronze"><input type="radio" id="bronze" name="bronze" value="bronze"
+                                    required>Bronze</label>
+                            <label for="silver"><input type="radio" id="silver" name="silver" value="silver"
+                                    required>Silver</label>
+                            <label for="gold"><input type="radio" id="gold" name="gold" value="gold"
+                                    required>Gold</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Business/Organization Description</legend>
+                            <label for="description"><textarea id="description" name="description" rows="6" cols="50"
+                                    title="Describe your business or organization here">Enter Description Here</textarea></label>
+                        </fieldset>
+                        <label for="submit"><input type="submit" id="submit" value="Send Application"></label>
+                    </form>
+            </div>
             </section>
             <div class="membership-container">
-                <section class="membership-level">
+                <section class="membership-level1">
+                    <!-- Non Profit Membership-->
                     <h6>Non-Profit Membership Level</h6>
-                    <button class="open-button">Learn More</button>
+                    <button id="openButton1">Learn More</button>
+                    <dialog id="dialogBoxText1">
+                        <h6>Non-Profit Membership Level Benifits</h6>
+                        <h5>Organization/Business Recognition</h5>
+                        <h5>Listed on Chamber Page</h5>
+                        <h5>News Letters</h5>
+                        <button id="dialogCloseButton1">close</button>
+                    </dialog>
+                    <div class="shimmer1"></div>
                 </section>
-                <section class="membership-level">
+                <!-- Bronze Membership-->
+                <section class="membership-level2">
                     <h6>Bronze Membership Level</h6>
-                    <button class="open-button">Learn More</button>
+                    <button id="openButton2">Learn More</button>
+                    <dialog id="dialogBoxText2">
+                        <h6>Non-Profit Membership Level Benifits</h6>
+                        <h5>Organization/Business Recognition</h5>
+                        <h5>Listed on Chamber Page</h5>
+                        <h5>News Letters</h5>
+                        <h5>Dedicated Parade Slot</h5>
+                        <button id="dialogCloseButton2">close</button>
+                    </dialog>
+                    <div class="shimmer2"></div>
                 </section>
-                <section class="membership-level">
+                <!-- Silver Membership-->
+                <section class="membership-level3">
                     <h6>Silver Membership Level</h6>
-                    <button class="open-button">Learn More</button>
+                    <button id="openButton3">Learn More</button>
+                    <dialog id="dialogBoxText3">
+                        <h6>Non-Profit Membership Level Benifits</h6>
+                        <h5>Organization/Business Recognition</h5>
+                        <h5>Listed on Chamber Page</h5>
+                        <h5>News Letters</h5>
+                        <h5>Dedicated Parade Slot</h5>
+                        <h5>Dedicated Peach Days Booth</h5>
+                        <button id="dialogCloseButton3">close</button>
+                    </dialog>
+                    <div class="shimmer3"></div>
                 </section>
-                <section class="membership-level">
-                    <h6>Gold Membership Level</h6>
-                    <button class="open-button">Learn More</button>
+                <!-- Gold Membership-->
+                <section class="membership-level4">
+                    <h6>Bronze Membership Level</h6>
+                    <button id="openButton4">Learn More</button>
+                    <dialog id="dialogBoxText4">
+                        <h6>Non-Profit Membership Level Benifits</h6>
+                        <h5>Organization/Business Recognition</h5>
+                        <h5>Listed on Chamber Page</h5>
+                        <h5>Dedicated Parade Slot</h5>
+                        <h5>Dedicated Peach Days Booth</h5>
+                        <h5>Commerce Ball Recognition</h5>
+                        <button id="dialogCloseButton4">close</button>
+                    </dialog>
+                    <div class="shimmer4"></div>
                 </section>
             </div>
         </div>

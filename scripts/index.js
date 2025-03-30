@@ -207,11 +207,13 @@ function createClassCard(filteredSubject) {
     const creditAmount = document.getElementById("credits");
     creditAmount.innerHTML = creditsEarned;
 
+    // ========================Dialog Buttons=========================
+
     const openButton = document.querySelector("#openButton")
     const dialogBoxText = document.querySelector("#dialogBoxText");
     const dialogCloseButton = document.querySelector("#dialogCloseButton");
 
-    // ========================Dialog Buttons=========================
+
     // Class Button 1
     openButton1.addEventListener("click", () => {
         dialogBoxText1.showModal();

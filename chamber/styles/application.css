@@ -1,3 +1,36 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    33% {
+        opacity: 0/3;
+        transform: translateX(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        opacity: 0;
+        transform: translateX(-75%)
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(200%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 :root {
     --main-bg-color: #eff0ef;
     --heading-bg-color: #415E40;
@@ -55,10 +88,6 @@
     font-size: .9rem;
 }
 
-main {
-    max-width: 450px;
-}
-
 label {
     font-family: abel;
 }
@@ -68,9 +97,123 @@ textarea {
     width: 92%
 }
 
+.dialogBoxText1,
+.dialogBoxText2,
+.dialogBoxText3,
+.dialogBoxText4 {
+    display: block;
+}
+
+.membership-level1,
+.membership-level2,
+.membership-level3,
+.membership-level4 {
+    margin: 10px;
+    padding: 5px;
+    border: solid var(--dark-decorative) 5px;
+    border-radius: .75rem;
+    position: relative;
+}
+
+.shimmer1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+
+    background: linear-gradient(100deg,
+            rgba(255, 255, 255, 0) 20%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0) 80%);
+
+    animation: shimmer 20.5s infinite Linear;
+}
+
+.shimmer2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+
+    background: linear-gradient(100deg,
+            rgba(255, 255, 255, 0) 20%,
+            rgba(240, 146, 69, 0.5) 50%,
+            rgba(255, 255, 255, 0) 80%);
+
+    animation: shimmer 20.5s infinite Linear;
+}
+
+.shimmer3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+
+    background: linear-gradient(100deg,
+            rgba(255, 255, 255, 0) 20%,
+            rgba(192, 192, 192, 0.80) 50%,
+            rgba(255, 255, 255, 0) 80%);
+
+    animation: shimmer 20.5s infinite Linear;
+}
+
+.shimmer4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+
+    background: linear-gradient(100deg,
+            rgba(255, 255, 255, 0) 20%,
+            rgba(211, 175, 55, 0.75) 50%,
+            rgba(255, 255, 255, 0) 80%);
+
+    animation: shimmer 20.5s infinite Linear;
+}
+
+
+.membership-level1 {
+    animation: fade-in 1s;
+}
+
+.membership-level2 {
+    animation: fade-in 1.5s;
+}
+
+.membership-level3 {
+    animation: fade-in 2s;
+}
+
+.membership-level4 {
+    animation: fade-in 2.5s;
+}
+
+
 @media (min-width: 900px) {
+
+    /* .main-container {
+        display: flex;
+    } */
+    h1 {
+        margin: 10px;
+    }
+
     .main-container {
         display: grid;
-        grid-template-columns: ;
+        grid-template-columns: repeat(24, 1fr);
     }
+
+    .application-container {
+        grid-column: 1/8;
+    }
+
+    .membership-container {
+        grid-column: 10/18;
+        margin-top: 4.5rem;
+    }
+
 }
