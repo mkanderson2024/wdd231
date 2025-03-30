@@ -230,6 +230,9 @@ h6,
     padding: 10px;
 }
 
+.results {
+    margin: 10px;
+}
 
 .list {
     display: flex;
