@@ -4,10 +4,6 @@ console.log(getString);
 const myInfo = new URLSearchParams(getString);
 console.log(myInfo);
 
-//Shorthand of above
-// const myInfo = new URLSearchParams(window.location.search);
-// console.log(myInfo);
-
 // console.log(myInfo.get('first'));
 // console.log(myInfo.get('last'));
 // console.log(myInfo.get('ordinance'));
