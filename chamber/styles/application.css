@@ -1,8 +1,8 @@
 :root {
     --main-bg-color: #eff0ef;
-    --heading-bg-color: #588157;
+    --heading-bg-color: #415E40;
     --heading-tab-text: #ffffff;
-    --decorative: #a3b18a;
+    --decorative: #4C5E40;
     --dark-decorative: #344e41;
     --bar-color: #333;
 }
@@ -23,17 +23,28 @@
     border-radius: 1rem;
 }
 
-.applicatoin input[type="textarea"] {
-    width: 92%;
-}
-
-.application input[type="text"] {
+.application input[type="text"],
+.application input[type="email"],
+.application input[type="tel"] {
     display: block;
     padding: .75rem;
     width: 92%;
+    border-radius: .25rem;
 }
 
-.application input .application input:hover[type="submit"] {
+.application input[type="radio"] {
+    margin-right: 5px;
+}
+
+.application input:required {
+    border-left: solid red 5px;
+}
+
+.application input:required:valid {
+    border-left: solid green 5px;
+}
+
+.application input:hover[type="submit"] {
     background-color: darkgreen;
     color: white;
 }
@@ -46,4 +57,13 @@
 
 main {
     max-width: 450px;
+}
+
+label {
+    font-family: abel;
+}
+
+textarea {
+    resize: vertical;
+    width: 92%
 }
