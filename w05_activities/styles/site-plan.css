@@ -1,0 +1,84 @@
+:root {
+    --main-bg-color: #eff0ef;
+    --heading-bg-color: #415E40;
+    --heading-tab-text: #ffffff;
+    --decorative: #4C5E40;
+    --dark-decorative: #344e41;
+    --bar-color: #333;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h1,
+h2 {
+    background-color: var(--heading-bg-color);
+    color: var(--heading-tab-text);
+    padding: 10px;
+    border-radius: .50rem;
+    font-family: kanit;
+}
+
+main {
+    background-color: var(--main-bg-color);
+}
+
+p {
+    font-family: abel;
+    border-radius: .50rem;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.heading-bg-color p {
+    background-color: var(--heading-bg-color);
+    max-width: 230px;
+    border: solid black 5px;
+}
+
+.heading-tab-text p {
+    background-color: var(--heading-tab-text);
+    max-width: 230px;
+    border: solid black 5px;
+}
+
+.decorative p {
+    background-color: var(--decorative);
+    max-width: 230px;
+    border: solid black 5px;
+}
+
+.dark-decorative p {
+    background-color: var(--dark-decorative);
+    max-width: 230px;
+    border: solid black 5px;
+}
+
+.main-bg-color p {
+    background-color: var(--main-bg-color);
+    max-width: 230px;
+    border: solid black 5px;
+}
+
+.bar-color p {
+    background-color: var(--bar-color);
+    max-width: 230px;
+    border: solid black 5px;
+}
+
+section {
+    font-family: kanit
+}
+
+footer {
+    font-family: abel;
+    border-radius: .50rem;
+    background-color: var(--heading-bg-color);
+    color: var(--heading-tab-text);
+    text-align: center;
+    padding: 10px;
+}
