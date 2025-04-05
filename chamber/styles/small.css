@@ -22,7 +22,15 @@
         "name"
         "photograph"
         "descirption"
-        "location";
+        "location"
+        "button";
+}
+
+button {
+    max-width: 150px;
+    text-align: center;
+    margin: 10px;
+    grid-area: button;
 }
 
 h1 {
