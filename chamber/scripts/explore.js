@@ -11,7 +11,7 @@ function displayItems(places) {
 
         const placePhoto = document.createElement('img')
         placePhoto.src = `${place.photo_url}`
-        placePhoto.alt = place.name
+        placePhoto.alt = place.name.toLowerCase()
         placePhoto.width = `300`
         placePhoto.loading = 'lazy'
         console.log(placePhoto)
