@@ -10,6 +10,7 @@ function displayItems(places) {
         const placePhoto = document.createElement('img')
         placePhoto.src = `${place.photo_url}`
         placePhoto.alt = place.name
+        placePhoto.width= `300`
         console.log(placePhoto)
         placeCard.appendChild(placePhoto)
 
@@ -18,8 +19,12 @@ function displayItems(places) {
         placeCard.appendChild(placeTitle)
 
         const placeAddress = document.createElement('address')
-        placeAddress.innerText = place.description
+        placeAddress.innerText = place.address
         placeCard.appendChild(placeAddress)
+
+        const placeDescription = document.createElement('p')
+        placeDescription.innerText = place.description
+        placeCard.appendChild(placeDescription)
 
         allCards.appendChild(placeCard)
     })
