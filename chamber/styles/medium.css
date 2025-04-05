@@ -1,0 +1,34 @@
+@media only screen and (min-width: 38rem) {
+
+    .explore-card {
+        grid-template-areas:
+            "photograph name"
+            "photograph descirption"
+            "photograph location";
+    }
+
+    .explore-card img {
+        width: 300px;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: minmax(150px, 25%) 1fr;
+    }
+
+    .visits {
+        margin: 1rem 8px;
+        background-color: var(--decorative);
+        color: var(--heading-tab-text);
+        padding: 1rem 8px;
+        border-radius: 8px;
+        max-width: 300px;
+        max-height: 200px;
+    }
+
+    img:hover {
+        transform: scale(1.3) rotate(1deg);
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.2s;
+    }
+}

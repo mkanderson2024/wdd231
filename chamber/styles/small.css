@@ -1,0 +1,63 @@
+:root {
+    --main-bg-color: #eff0ef;
+    --heading-bg-color: #415E40;
+    --heading-tab-text: #ffffff;
+    --decorative: #4C5E40;
+    --dark-decorative: #344e41;
+    --bar-color: #333;
+}
+
+
+.explore-card {
+    margin: 1rem 8px;
+    border: 1px solid var(--dark-decorative);
+    background-color: var(--decorative);
+    color: var(--heading-tab-text);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photograph"
+        "descirption"
+        "location";
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+.explore-card h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+.explore-card img {
+    width: 100%;
+    grid-area: photograph;
+}
+
+.explore-card p {
+    margin: 1rem 10px;
+    grid-area: descirption;
+}
+
+.explore-card address {
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+.main-title {
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+.visits {
+    margin: 1rem 8px;
+    background-color: var(--decorative);
+    color: var(--heading-tab-text);
+    padding: 1rem 8px;
+    border-radius: 8px;
+}

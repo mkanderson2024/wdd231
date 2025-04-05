@@ -6,11 +6,12 @@ const allCards = document.querySelector("#cards")
 function displayItems(places) {
     places.forEach(place => {
         const placeCard = document.createElement('div')
+        placeCard.className = 'explore-card'
 
         const placePhoto = document.createElement('img')
         placePhoto.src = `${place.photo_url}`
         placePhoto.alt = place.name
-        placePhoto.width= `300`
+        placePhoto.width = `300`
         console.log(placePhoto)
         placeCard.appendChild(placePhoto)
 

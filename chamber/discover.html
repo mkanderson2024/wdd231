@@ -17,13 +17,18 @@
     <!--Styles Links-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Kanit:wght@100;300;400&display=swap"
         rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <!-- Script Links-->
-    <script defer src="scripts/explore.js" type="module"></script>
+    <script src="scripts/explore.js" type="module"></script>
+    <script defer src="scripts/footer.js"></script>
+    <script defer src="scripts/visitor.js"></script>
 </head>
 
 <body>
@@ -39,7 +44,7 @@
                 <nav>
                     <ul class="navigation">
                         <li><a href="index.html" title="home">Home</a></li>
-                        <li><a href="#" title="Directory">Directory</a></li>
+                        <li><a href="directory.html" title="Directory">Directory</a></li>
                         <li><a href="join.html" title="join">Join</a></li>
                         <li><a href="#" class="active" title="discover">Discover</a></li>
                     </ul>
@@ -50,8 +55,15 @@
 
     <main>
         <section>
-            <h1>Discover</h1>
-            <div class="discover-cards" id="cards"></div>
+            <h2 class="main-title">Discover</h2>
+            <div class="main-content">
+                <div class="visits">
+                    <h2>Hello Visitor!</h2>
+                    <p id="visit-message">
+                    </p>
+                </div>
+                <div class="discover-cards" id="cards"></div>
+            </div>
         </section>
     </main>
 
