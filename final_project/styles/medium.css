@@ -1,0 +1,82 @@
+@media only screen and (min-width: 38rem) {
+    .home-info {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .weather-info {
+        grid-column: 1 / span 2
+    }
+
+    .events {
+        grid-column: 3 / span 8
+    }
+
+    .welcome {
+        grid-column: 11 / span 2
+    }
+
+
+    header {
+        background-color: var(--heading-bg-color);
+        color: var(--heading-tab-text);
+        margin-top: 0px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        list-style: none;
+        background-color: var(--alternate-bg);
+        justify-content: center;
+        margin: 0;
+
+    }
+
+    .active {
+        border-left: none;
+        border-bottom: solid yellowgreen;
+    }
+
+    .navigation {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, .75fr);
+        background-color: #333;
+        text-align: center;
+        color: #eee;
+    }
+
+    .navigation li {
+        display: grid
+    }
+
+    .navigation a {
+        display: grid;
+        background-color: #333;
+        color: #eee;
+        text-decoration: none;
+        text-align: center;
+        margin: 0;
+    }
+
+    .navigation a:hover {
+        background-color: var(--heading-tab-text);
+        color: var(--dark-decorative);
+        border: solid var(--decorative-border) 2px;
+        border-radius: 10rem;
+        margin: 0px;
+        transition-timing-function: ease-in-out;
+        transform: translate(20px);
+        transition-duration: 0.5s;
+        border-bottom: solid var(--heading-tab-text);
+    }
+
+    footer {
+        display: flex
+    }
+}

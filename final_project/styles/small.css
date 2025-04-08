@@ -8,7 +8,7 @@
 }
 
 header {
-    margin-top: 45px;
+    margin: 10px;
     border-radius: 1rem;
     background-color: var(--heading-bg-color);
     color: var(--heading-tab-text);
@@ -24,9 +24,24 @@ main {
 h1,
 h2,
 h3,
+h4,
 h5 {
     font-family: kanit;
     margin: 0px;
+}
+
+h3 {
+    background-color: var(--dark-decorative);
+    color: var(--heading-tab-text);
+    font-size: 25px;
+    border-radius: .25rem;
+    position: relative;
+    top: -3px;
+    padding: 10px;
+}
+
+h5 {
+    padding: 5px;
 }
 
 p {
@@ -98,7 +113,6 @@ nav ul {
     padding: 1rem;
     font-size: larger;
     margin: 4px;
-    border-radius: 10rem;
 }
 
 .navigation li {
@@ -118,23 +132,33 @@ nav ul {
     display: grid;
 }
 
-.events,
-.current-weather,
-.weather-forcast {
-    background-color: var(--decorative);
-    color: var(--heading-tab-text);
+.home-info {
     padding: 10px;
+}
+
+.current-weather,
+.weather-forcast,
+.events,
+.welcome {
+    background-color: var(--main-bg-color);
     margin: 10px;
     border-radius: .25rem;
+    border: solid 4px var(--dark-decorative);
+    text-align: center;
+}
+
+.weather-icon {
+    background-color: lightblue;
+    margin: 10px auto;
 }
 
 footer {
-    margin: 0 auto;
+    margin: 10px;
     padding: 1rem;
     border-radius: 1rem;
     background-color: var(--heading-bg-color);
     color: var(--heading-tab-text);
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -148,6 +172,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
+    padding-bottom: 40px;
 }
 
 .flag-footer {

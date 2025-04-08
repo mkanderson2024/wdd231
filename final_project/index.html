@@ -17,16 +17,17 @@
     <!--Styles Links-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Kanit:wght@100;300;400&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/icon.ico">
     <!--Script Links-->
-    <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/header.js"></script>
     <script defer src="scripts/weather.js"></script>
     <script defer src="scripts/forecast.js"></script>
-    <script defer src="scripts/header.js"></script>
+    <script defer src="scripts/visitor.js"></script>
     <script defer src="scripts/footer.js"></script>
 
 </head>
@@ -44,9 +45,9 @@
                 <nav>
                     <ul class="navigation">
                         <li><a href="#" class="active" title="home">Home</a></li>
-                        <li><a href="directory.html" title="Directory">Directory</a></li>
-                        <li><a href="join.html" title="join">Join</a></li>
-                        <li><a href="discover.html" title="discover">Discover</a></li>
+                        <li><a href="activities.html" title="activities">Activities</a></li>
+                        <li><a href="aquatic.html" title="aquatic activities">Aquatic Activities</a></li>
+                        <li><a href="" title="discover">Discover</a></li>
                     </ul>
                 </nav>
             </div>
@@ -59,21 +60,25 @@
         <div class="home-info">
             <div class="weather-info">
                 <section class="current-weather">
-                    <h2>Current Weather</h2>
+                    <h3>Current Weather</h3>
+                    <img class="weather-icon" id="weather-icon" src="#" alt="weather icon" width="75">
                     <div class="weather-container">
-                        <img class="weather-icon" id="weather-icon" src="#" alt="weather icon" width="75">
                         <div id="current-weather">
                             <!-- weather data -->
                         </div>
                     </div>
                 </section>
                 <section class="weather-forcast">
-                    <h2>Weather Forecast</h2>
-                    <div id="forecast-weather" class="weather-forcast"></div>
+                    <h3>Weather Forecast</h3>
+                    <div id="forecast-weather" class="forecast-info"></div>
                 </section>
             </div>
             <section class="events">
-                <h2>Events</h2>
+                <h3>Events</h3>
+            </section>
+            <section class="welcome">
+                <h3>Welcome</h3>
+                <p id="visit-message"></p>
             </section>
         </div>
 
@@ -81,7 +86,7 @@
 
     <footer>
         <div class="footer-container">
-            <h3>Rees Pioneer Park</H3>
+            <h4>Rees Pioneer Park</h4>
             <p class="contact-info">800 W Forest ST</p>
             <p class="contact-info">Brigham City, UT 84302</p>
             <p class="contact-info">https://www.bcutah.gov/page/parks-and-boweries/</p>
