@@ -1,0 +1,157 @@
+:root {
+    --main-bg-color: #eff0ef;
+    --heading-bg-color: #415E40;
+    --heading-tab-text: #ffffff;
+    --decorative: #4C5E40;
+    --dark-decorative: #344e41;
+    --bar-color: #333;
+}
+
+header {
+    margin-top: 45px;
+    border-radius: 1rem;
+    background-color: var(--heading-bg-color);
+    color: var(--heading-tab-text);
+    padding: 1rem;
+}
+
+main {
+    background-color: var(--main-bg-color);
+    border-radius: 1rem;
+    margin: 10px;
+}
+
+h1,
+h2,
+h3,
+h5 {
+    font-family: kanit;
+    margin: 0px;
+}
+
+p {
+    font-family: abel;
+}
+
+img {
+    box-shadow: 0px 0px 5px 5px rgba(29, 28, 28, 0.667);
+    background-color: var(--heading-tab-text);
+}
+
+
+.flag {
+    display: grid;
+    position: relative;
+    right: 8rem;
+    top: -4rem;
+}
+
+.title-container {
+    margin-top: 0px;
+    margin-left: 8rem;
+}
+
+#menu {
+    font-size: 6rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 10px;
+    padding: 0px 0px;
+    position: absolute;
+    top: .50rem;
+    right: .5rem;
+    color: var(--heading-tab-text);
+    background: none;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    margin-top: 4rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--alternate-bg);
+
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0 auto;
+
+}
+
+.navigation a {
+    display: flex;
+    background-color: var(--bar-color);
+    color: var(--heading-tab-text);
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+    margin: 4px;
+    border-radius: 10rem;
+}
+
+.navigation li {
+    display: none;
+}
+
+#menu.show::before {
+    content: "X";
+    font-size: 6.5rem;
+}
+
+.active {
+    border-left: solid 10px yellowgreen;
+}
+
+.show li {
+    display: grid;
+}
+
+.events,
+.current-weather,
+.weather-forcast {
+    background-color: var(--decorative);
+    color: var(--heading-tab-text);
+    padding: 10px;
+    margin: 10px;
+    border-radius: .25rem;
+}
+
+footer {
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--heading-bg-color);
+    color: var(--heading-tab-text);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-container {
+    flex: 1 1 350px;
+    flex: 1 1 350px;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.flag-footer {
+    position: relative;
+    top: 7px;
+    left: 5px;
+}
