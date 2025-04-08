@@ -3,17 +3,46 @@ const cityForecast = "Brigham City";
 const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?q=${cityForecast}&appid=${apiForecastKey}&units=imperial`;
 const forecastCard = document.querySelector('#forecast-weather');
 
-fetch(urlForecast)
-    .then(response => response.json())
-    .then(forecastData => {
-        // Process the forecast data
-        console.log("Forcast Data")
-        console.log(forecastData);
-        displayForecastData(forecastData)
-    })
-    .catch(error => {
-        console.error("Error fetching data:", error);
-    });
+async function getForecast(city) {
+    try {
+        const responce = await fetch(urlForecast)
+
+        if (!responce.ok) {
+            throw new Error(`HTTP error! status: ${responce.status}`);
+        }
+
+        const data = await responce.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetcing forecast:', error);
+        throw error;
+    }
+}
+
+
+async function main() {
+    try {
+        const forecastData = await getForecast(cityForecast)
+        console.log("Forecast Data")
+        console.log(forecastData)
+        displayForecastData(forecastData);
+    } catch (error) {
+        console.error('Failed to get forecast:', error);
+    }
+}
+
+
+// fetch(urlForecast)
+//     .then(response => response.json())
+//     .then(forecastData => {
+//         // Process the forecast data
+//         console.log("Forcast Data")
+//         console.log(forecastData);
+//         displayForecastData(forecastData)
+//     })
+//     .catch(error => {
+//         console.error("Error fetching data:", error);
+//     });
 
 const displayForecastData = (forecastInfo) => {
     let forecastedCard = document.createElement("section")
@@ -44,3 +73,5 @@ const displayForecastData = (forecastInfo) => {
 
     forecastCard.appendChild(forecastedCard)
 };
+
+main();
