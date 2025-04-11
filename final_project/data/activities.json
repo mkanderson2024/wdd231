@@ -1,0 +1,109 @@
+{
+    "activities": [
+        {
+            "activity": "Walk",
+            "weather": "Any",
+            "cost": "None",
+            "reservation": "No",
+            "ages": "All"
+        },
+        {
+            "activity": "Picnic",
+            "weather": "Dry",
+            "cost": "None",
+            "reservation": "No",
+            "ages": "All"
+        },
+        {
+            "activity": "Basket Ball",
+            "weather": "Dry",
+            "cost": "None",
+            "reservation": "No",
+            "ages": "5+"
+        },
+        {
+            "activity": "Pickle Ball",
+            "weather": "Dry",
+            "cost": "None",
+            "reservation": "Possibly",
+            "ages": "12+"
+        },
+        {
+            "activity": "Baseball",
+            "weather": "Dry",
+            "cost": "None",
+            "reservation": "No",
+            "ages": "5+"
+        },
+        {
+            "activity": "Softball",
+            "weather": "Dry",
+            "cost": "None",
+            "reservation": "No",
+            "ages": "All"
+        },
+        {
+            "activity": "Playground",
+            "weather": "Dry",
+            "cost": "None",
+            "reservation": "No",
+            "ages": "All"
+        },
+        {
+            "activity": "Soccer",
+            "weather": "Dry",
+            "cost": "None",
+            "reservation": "No",
+            "ages": "All"
+        },
+        {
+            "activity": "Bowery",
+            "weather": "Any",
+            "cost": "$30/h",
+            "reservation": "Yes",
+            "ages": "All"
+        },
+        {
+            "activity": "Recreation Center",
+            "weather": "Any",
+            "cost": "40/h",
+            "reservation": "No",
+            "ages": "All"
+        },
+        {
+            "activity": "General Play",
+            "weather": "Dry",
+            "cost": "None",
+            "reservation": "No",
+            "ages": "All"
+        },
+        {
+            "activity": "Feed the Ducks",
+            "weather": "Dry",
+            "cost": "$5",
+            "reservation": "No",
+            "ages": "All"
+        },
+        {
+            "activity": "Fish",
+            "weather": "Warm",
+            "cost": "$15",
+            "reservation": "No",
+            "ages": "All"
+        },
+        {
+            "activity": "Canoe/Kayak",
+            "weather": "Warm",
+            "cost": "$25",
+            "reservation": "No",
+            "ages": "All"
+        },
+        {
+            "activity": "Swimming Pool",
+            "weather": "Warm",
+            "cost": "$30/Family or $5/Person",
+            "reservation": "No",
+            "ages": "All"
+        }
+    ]
+}
