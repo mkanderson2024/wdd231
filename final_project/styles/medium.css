@@ -4,6 +4,21 @@
         grid-template-columns: repeat(12, 1fr);
     }
 
+    .title-container {
+        display: grid;
+        margin-top: 0px;
+        margin-left: 8rem;
+    }
+
+    h1{font-size: 60px;}
+
+    .flag {
+        display: grid;
+        position: relative;
+        left: -8rem;
+        top: -5rem;
+    }
+
     .weather-info {
         grid-column: 1 / span 2
     }
@@ -78,7 +93,7 @@
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(375px, 1.5fr));
 
     }
 

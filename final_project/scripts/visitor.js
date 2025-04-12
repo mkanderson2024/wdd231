@@ -27,7 +27,7 @@ function getDaysSinceLastVisit() {
         returnedMessage = `${quickReturn}`
     }
     if (daysDifference >= 1) {
-        if (daysDifference = 1) {
+        if (daysDifference == 1) {
             longReturn = `It has been ${daysDifference} day since your last visit.`
         }
         else { returnedMessage = `${longReturn}` }

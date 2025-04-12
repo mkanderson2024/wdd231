@@ -64,14 +64,14 @@ img {
 
 .flag {
     display: grid;
-    position: relative;
-    right: 8rem;
-    top: -4rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 6.5rem;
 }
 
 .title-container {
+    display: grid;
     margin-top: 0px;
-    margin-left: 8rem;
 }
 
 #menu {
@@ -155,7 +155,7 @@ button:hover {
     text-align: center;
 }
 
-.activity-card {
+.grid .activity-card {
     margin: 1rem 8px;
     border: 1px solid var(--dark-decorative);
     background-color: var(--decorative);
@@ -190,7 +190,7 @@ button:hover {
 
 .activity-card .activity-weather {
     grid-area: weather;
-    margin: 1rem 1rem;
+    margin: .5rem 1rem;
 }
 
 .activity-card .activity-cost {
@@ -210,7 +210,7 @@ button:hover {
 
 .activity-card .activity-description {
     grid-area: description;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
 }
 
 .active {
@@ -254,8 +254,26 @@ button:hover {
     display: none;
 }
 
-.list:nth-child(even) {
-    background-color: var(--decorative);
+.list .activity-card:nth-child(even) {
+    background-color: rgba(65,94,64,0.5) ;
+
+}
+
+.list .activity-card {
+    border: 2px solid var(--dark-decorative);
+    background-color: rgba(76,94,64,0.3);
+    color: black;
+    padding-bottom: 10px;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photograph"
+        "weather"
+        "cost"
+        "reservation"
+        "age"
+        "description";
 }
 
 .weather-icon {
