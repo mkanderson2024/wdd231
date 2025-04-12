@@ -134,6 +134,22 @@ nav ul {
     font-size: 6.5rem;
 }
 
+.menu-buttons {
+    margin: 1rem auto;
+    border: 1px solid var(--bar-color);
+    padding: 1rem;
+    color: var(--heading-tab-text);
+    background-color: var(--dark-decorative);
+    text-align: center;
+    font-weight: 700;
+    border-radius: .50rem;
+
+}
+
+.buttons-container {
+    text-align: center;
+}
+
 .active {
     border-left: solid 10px yellowgreen;
 }
