@@ -17,6 +17,7 @@ function getDaysSinceLastVisit() {
     const timeDifference = today.getTime() - lastVisitDate.getTime();
     const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
+    // Local Storage
     localStorage.setItem('lastVisit', new Date().getTime());
 
     let returnedMessage = ``;

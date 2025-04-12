@@ -1,3 +1,7 @@
+//Import modular java script data
+import { activities } from '../data/activities.mjs'
+console.log(activities)
+
 // Grid/List Button Switches
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
@@ -16,25 +20,11 @@ function showList() {
     display.classList.add("list");
     display.classList.remove("grid");
 }
-
-getActivityData()
-
-async function getActivityData() {
-    try {
-        const responce = await fetch("data/activities.json");
-        const data = await responce.json();
-        console.table(data.activities);
-        displayActivities(data.activities);
-    }
-    catch (error) {
-        console.error("Error getting activities data:", error)
-    }
-}
-
+// Create cards
 const allCards = document.querySelector("#activity-cards")
 
-const displayActivities = (activities) => {
-    activities.forEach((activity) => {
+function displayActivities(activitiesList) {
+    activitiesList.forEach(activity => {
         const activityCard = document.createElement('div')
         activityCard.className = 'activity-card'
         //          img
@@ -82,6 +72,7 @@ const displayActivities = (activities) => {
         activityCard.appendChild(activityDescription)
 
         allCards.appendChild(activityCard)
-
     })
 }
+
+displayActivities(activities)

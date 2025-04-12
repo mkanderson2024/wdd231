@@ -19,6 +19,8 @@ fetch(apiUrl)
         console.error('Error fetching data:', error);
     });
 
+
+// API output
 const displayWeatherData = (weatherInfo) => {
     let iconCode = weatherInfo.weather[0].icon;
     //Create elements

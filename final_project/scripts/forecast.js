@@ -31,19 +31,7 @@ async function main() {
     }
 }
 
-
-// fetch(urlForecast)
-//     .then(response => response.json())
-//     .then(forecastData => {
-//         // Process the forecast data
-//         console.log("Forcast Data")
-//         console.log(forecastData);
-//         displayForecastData(forecastData)
-//     })
-//     .catch(error => {
-//         console.error("Error fetching data:", error);
-//     });
-
+// API output
 const displayForecastData = (forecastInfo) => {
     let forecastedCard = document.createElement("section")
     let forecastDate1 = document.createElement("h5")
