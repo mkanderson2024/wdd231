@@ -163,6 +163,7 @@ button:hover {
     border-radius: 8px;
     box-sizing: border-box;
     overflow: hidden;
+    padding-bottom: 10px;
 
     display: grid;
     grid-template-areas:
@@ -179,7 +180,7 @@ button:hover {
     margin: 0 1rem;
     grid-area: name;
     font-size: 40px;
-    font-family: kanit;
+    font-family: kanit
 }
 
 .activity-card img {
@@ -189,7 +190,7 @@ button:hover {
 
 .activity-card .activity-weather {
     grid-area: weather;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
 }
 
 .activity-card .activity-cost {
@@ -251,10 +252,6 @@ button:hover {
 
 .list .activity-card img {
     display: none;
-}
-
-.list p {
-    margin: 0 1rem
 }
 
 .list:nth-child(even) {

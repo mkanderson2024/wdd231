@@ -1,0 +1,15 @@
+@media only screen and (min-width:64rem) {
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    }
+
+    .activity-card img {
+        width: 300px;
+
+    }
+
+}

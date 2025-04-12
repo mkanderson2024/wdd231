@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 56rem) {
     .home-info {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -78,11 +78,12 @@
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 
     }
 
     .grid .activity-card {
+        max-width: 450px;
         grid-template-areas:
             "photograph name"
             "photograph weather"
@@ -94,7 +95,7 @@
     }
 
     .activity-card img {
-        width: 300px;
+        width: 200px;
 
     }
 
