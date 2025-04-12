@@ -1,0 +1,219 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    33% {
+        opacity: 0/3;
+        transform: translateX(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        opacity: 0;
+        transform: translateX(-75%)
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(200%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+:root {
+    --main-bg-color: #eff0ef;
+    --heading-bg-color: #415E40;
+    --heading-tab-text: #ffffff;
+    --decorative: #4C5E40;
+    --dark-decorative: #344e41;
+    --bar-color: #333;
+}
+
+.application legend {
+    padding: 0 .5rem;
+    font-family: "kanit";
+    font-size: 20px;
+}
+
+.application input[type="submit"] {
+    padding: .8rem;
+    margin: 2rem 2% 2rem 25%;
+    width: 100%;
+    max-width: 200px;
+    background-color: var(--heading-bg-color);
+    color: var(--heading-tab-text);
+    border-radius: 1rem;
+}
+
+.application input[type="text"],
+.application input[type="email"],
+.application input[type="tel"] {
+    display: block;
+    padding: .75rem;
+    width: 92%;
+    border-radius: .25rem;
+}
+
+.application input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.application input:required {
+    border-left: solid red 5px;
+}
+
+.application input:required:valid {
+    border-left: solid green 5px;
+}
+
+.application input:hover[type="submit"] {
+    background-color: darkgreen;
+    color: white;
+}
+
+.application label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+label {
+    font-family: abel;
+}
+
+textarea {
+    resize: vertical;
+    width: 92%
+}
+
+.dialogBoxText1,
+.dialogBoxText2,
+.dialogBoxText3,
+.dialogBoxText4 {
+    display: block;
+}
+
+.group-activity1,
+.group-activity2,
+.group-activity3,
+.group-activity4 {
+    margin: 10px;
+    padding: 5px;
+    border: solid var(--dark-decorative) 5px;
+    border-radius: .75rem;
+    position: relative;
+}
+
+.shimmer1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+
+    background: linear-gradient(100deg,
+            rgba(255, 255, 255, 0) 20%,
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0) 80%);
+
+    animation: shimmer 20.5s infinite Linear;
+}
+
+.shimmer2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+
+    background: linear-gradient(100deg,
+            rgba(255, 255, 255, 0) 20%,
+            rgba(240, 146, 69, 0.5) 50%,
+            rgba(255, 255, 255, 0) 80%);
+
+    animation: shimmer 20.5s infinite Linear;
+}
+
+.shimmer3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+
+    background: linear-gradient(100deg,
+            rgba(255, 255, 255, 0) 20%,
+            rgba(192, 192, 192, 0.80) 50%,
+            rgba(255, 255, 255, 0) 80%);
+
+    animation: shimmer 20.5s infinite Linear;
+}
+
+.shimmer4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+
+    background: linear-gradient(100deg,
+            rgba(255, 255, 255, 0) 20%,
+            rgba(211, 175, 55, 0.75) 50%,
+            rgba(255, 255, 255, 0) 80%);
+
+    animation: shimmer 20.5s infinite Linear;
+}
+
+
+.group-activity1 {
+    animation: fade-in 1s;
+}
+
+.group-activity2 {
+    animation: fade-in 1.5s;
+}
+
+.group-activity3 {
+    animation: fade-in 2s;
+}
+
+.group-activity4 {
+    animation: fade-in 2.5s;
+}
+
+
+@media (min-width: 900px) {
+
+    /* .main-container {
+        display: flex;
+    } */
+    h1 {
+        margin: 10px;
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(24, 1fr);
+    }
+
+    .application-container {
+        grid-column: 1/8;
+    }
+
+    .membership-container {
+        grid-column: 10/18;
+        margin-top: 4.5rem;
+    }
+
+}

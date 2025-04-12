@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 Pioneer Park Final Project - Join Page">
+    <meta name="keywords" content="Join, Michael, Anderson, WDD 231, Web Frontend Development I, Pioneer Park">
+    <meta name="author" content="Michael Anderson">
+    <title>Pioneer Park | Group Signup</title>
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="WDD 231 - Final Project| Pioneer Park | - Join - Michael Anderson">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mkanderson2024.github.io/wdd231/final_project/images/thumbnail.webp">
+    <meta property="og:url" content="https://mkanderson2024.github.io/wdd231/final_project/join.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <!--Styles Links-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Kanit:wght@100;300;400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/icon.ico">
+    <!--Script Links-->
+    <script defer src="scripts/header.js"></script>
+    <script defer src="scripts/footer.js"></script>
+    <script defer src="scripts/dialogs.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="title-container">
+                <h1>Pioneer Park</h1>
+                <h2 class="subtitle">Brigham City</h2>
+                <img class="flag" src="images/flag.webp" alt="flag" width="100">
+            </div>
+            <a id="menu" href="#"></a>
+            <div class="navbar">
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="#" class="active" title="home">Home</a></li>
+                        <li><a href="activities.html" title="activities">Activities</a></li>
+                        <li><a href="join.html" title="join group">Join Group</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="application-container">
+                <h1>Group Signup</h1>
+                <div class="application-form">
+                    <form method="get" action="thankyou.html" class="application" id="application-form-main">
+                        <!-- Name-->
+                        <fieldset>
+                            <legend>* Name</legend>
+                            <label for="first-name">First Name: <input type="text" required id="first-name"
+                                    name="first-name" autocomplete="given-name" title="enter first name here"
+                                    placeholder="John">
+                            </label>
+
+                            <label for="last-name">Last Name: <input type="text" required id="last-name"
+                                    name="last-name" autocomplete="family-name" title="enter last name here"
+                                    placeholder="Doe">
+                            </label>
+                        </fieldset>
+                        <!-- Contact -->
+                        <fieldset>
+                            <legend>* Contact Info</legend>
+                            <label for="email">Email: <input type="email" required id="email" name="email"
+                                    autocomplete="email" title="enter email address here"
+                                    placeholder="example@gmail.com">
+                            </label>
+
+                            <label for="mobile-number">Mobile Number: <input type="tel" required id="mobile-number"
+                                    name="mobile-number" autocomplete="tel" title="please enter mobile phone number"
+                                    placeholder="(123)456-7890"></label>
+                        </fieldset>
+                        <!-- Activities -->
+                        <fieldset>
+                            <legend>* Activities</legend>
+                            <label for="walks"><input type="checkbox" id="walks" class="activity-interest"
+                                    name="activity-interest" value="walks">Walks</label>
+
+                            <label for="sports"><input type="checkbox" id="sports" class="activity-interest"
+                                    name="activity-interest" value="sports">Sports</label>
+
+                            <label for="picnics"><input type="checkbox" id="picnics" class="activity-interest"
+                                    name="activity-interest" value="picnics">Picnics</label>
+
+                            <label for="pool"><input type="checkbox" id="pool" class="activity-interest"
+                                    name="activity-interest" value="pool">Pool</label>
+                        </fieldset>
+                        <!-- About you-->
+                        <fieldset>
+                            <legend>About You</legend>
+                            <label for="description"><textarea id="description" name="description" rows="6" cols="50"
+                                    title="Describe yourself here"
+                                    placeholder="Tell the group about yourself"></textarea></label>
+                            <label><input type="hidden" id="timestamp" value="" name="timestamp"></label>
+                        </fieldset>
+                        <label for="submit"><input type="submit" id="submit" value="Join Group"></label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="group-container">
+                <section class="group-activity1">
+                    <!-- Walks -->
+                    <h6>Walks</h6>
+                    <button id="openButton1">Learn More</button>
+                    <dialog id="dialogBoxText1">
+                        <h6>Group Activity:Walks</h6>
+                        <p>Make friends while getting fit in your community during walks around the park.</p>
+                        <p>Let people know you're interested in walking together by selecting "Walks" under
+                            Activities</p>
+                        <button id="dialogCloseButton1">close</button>
+                    </dialog>
+                    <div class="shimmer1"></div>
+                </section>
+                <!-- Sports -->
+                <section class="group-activity2">
+                    <h6>Sports</h6>
+                    <button id="openButton2">Learn More</button>
+                    <dialog id="dialogBoxText2">
+                        <h6>Group Activity: Sports</h6>
+                        <p>Make friends in your community while playing sports at the park.</p>
+                        <p>Let people know you're interested in playing sports together by selecting "Sports" under
+                            Activities</p>
+                        <button id="dialogCloseButton2">close</button>
+                    </dialog>
+                    <div class="shimmer2"></div>
+                </section>
+                <!-- Picnics -->
+                <section class="group-activity3">
+                    <h6>Picnics</h6>
+                    <button id="openButton3">Learn More</button>
+                    <dialog id="dialogBoxText3">
+                        <h6>Group Activity: Picnics</h6>
+                        <p>Make friends in your community during picnics barbecues and other like activities.</p>
+                        <p>Let people know you're interested in coordinating picnics by selecting "Picnic" under
+                            Activities</p>
+                        <button id="dialogCloseButton3">close</button>
+                    </dialog>
+                    <div class="shimmer3"></div>
+                </section>
+                <!-- Pool -->
+                <section class="group-activity4">
+                    <h6>Pool</h6>
+                    <button id="openButton4">Learn More</button>
+                    <dialog id="dialogBoxText4">
+                        <h6>Group Activity: Pool</h6>
+                        <p>Beat the summer heat and make friends with a get together at the pool. Food, drinks, and
+                            some pool equipment are available. Group event discounts and reservations available.
+                        </p>
+                        <p>Let people know you're interested in keeping it cool at the pool by selecting "Pool" under
+                            Activities</p>
+                        <button id="dialogCloseButton4">close</button>
+                    </dialog>
+                    <div class="shimmer4"></div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <h4>Rees Pioneer Park</h4>
+            <p class="contact-info">800 W Forest ST</p>
+            <p class="contact-info">Brigham City, UT 84302</p>
+            <p class="contact-info">https://www.bcutah.gov/page/parks-and-boweries/</p>
+            <p class="contact-info">Rees Pioneer Park (435) 734-6615</p>
+        </div>
+        <div class="footer-container">
+            <nav class="social-links">
+                <a href="https://facebook.com">
+                    <img src="images/facbook_symbol.webp" alt="Facebook" width="50">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/x_twitter.webp" alt="X (Formerly Twitter)" width="50">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram_icon.webp" alt="Instagram" width="50">
+                </a>
+            </nav>
+        </div>
+        <div class="footer-container">
+            <p class="foot-text">WDD231 Final Project Project</p>
+            <p class="foot-text">Michael Anderson</p>
+            <p class="foot-text">© <span id="copyright-year"></span> Rees Pioneer Park
+                <img class="flag-footer" src="images/flag.webp" alt="flag" width="45">
+            </p>
+            <p id="lastModified">Last Modified: </p>
+        </div>
+    </footer>
+</body>
+
+</html>

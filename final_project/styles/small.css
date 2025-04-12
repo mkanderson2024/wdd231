@@ -44,6 +44,16 @@ h5 {
     padding: 5px;
 }
 
+h6 {
+    background-color: var(--dark-decorative);
+    color: var(--heading-tab-text);
+    font-family: kanit;
+    font-size: 20px;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 60px;
+}
+
 .hero {
     margin: 0 auto;
     width: 100%;
@@ -255,13 +265,13 @@ button:hover {
 }
 
 .list .activity-card:nth-child(even) {
-    background-color: rgba(65,94,64,0.5) ;
+    background-color: rgba(65, 94, 64, 0.5);
 
 }
 
 .list .activity-card {
     border: 2px solid var(--dark-decorative);
-    background-color: rgba(76,94,64,0.3);
+    background-color: rgba(76, 94, 64, 0.3);
     color: black;
     padding-bottom: 10px;
 
