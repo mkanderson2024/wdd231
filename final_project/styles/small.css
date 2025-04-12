@@ -146,8 +146,63 @@ nav ul {
 
 }
 
+button:hover {
+    background-color: var(--decorative);
+}
+
+
 .buttons-container {
     text-align: center;
+}
+
+.activity-card {
+    margin: 1rem 8px;
+    border: 1px solid var(--dark-decorative);
+    background-color: var(--decorative);
+    color: var(--heading-tab-text);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photograph"
+        "weather"
+        "cost"
+        "reservation"
+        "age"
+        "description";
+}
+
+.activity-card h2 {
+    margin: 0 1rem;
+    grid-area: name;
+}
+
+.activity-card img {
+    width: 100%;
+    grid-area: photograph;
+}
+
+.activity-card .activity-weather {
+    grid-area: weather;
+}
+
+.activity-card .activity-cost {
+    grid-area: cost;
+}
+
+.activity-card .activity-reservation {
+    grid-area: reservation;
+}
+
+.activity-card .activity-age {
+    grid-area: age;
+}
+
+.activity-card .activity-description {
+    grid-area: description;
 }
 
 .active {
@@ -156,6 +211,12 @@ nav ul {
 
 .show li {
     display: grid;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .home-info {
@@ -171,6 +232,22 @@ nav ul {
     border-radius: .25rem;
     border: solid 4px var(--dark-decorative);
     text-align: center;
+}
+
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid var(--dark-decorative);
+}
+
+.list .activity-card img {
+    display: none;
+}
+
+.list p {
+    margin: 0 1rem
 }
 
 .weather-icon {

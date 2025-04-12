@@ -54,26 +54,31 @@ const displayActivities = (activities) => {
         //          weather
         const activityWeather = document.createElement('p')
         activityWeather.innerText = `Best weather for activity: ${activity.weather}`
+        activityWeather.className = 'activity-weather'
         activityCard.appendChild(activityWeather)
 
         //          cost
         const activityCost = document.createElement('p')
-        activityCost.innerText = activity.activityCost
+        activityCost.innerText = `Cost: ${activity.cost}`
+        activityCost.className = 'activity-cost'
         activityCard.appendChild(activityCost)
 
         //          reservation
         const activityReservation = document.createElement('p')
         activityReservation.innerText = `Reservation required: ${activity.reservation}`
+        activityReservation.className = 'activity-reservation'
         activityCard.appendChild(activityReservation)
 
         //          ages
         const activityAge = document.createElement('p')
         activityAge.innerText = `Suggested ages: ${activity.ages}`
+        activityAge.className = 'activity-age'
         activityCard.appendChild(activityAge)
 
         //          description
         const activityDescription = document.createElement('p')
         activityDescription.innerText = activity.description
+        activityDescription.className = 'activity-description'
         activityCard.appendChild(activityDescription)
 
         allCards.appendChild(activityCard)
