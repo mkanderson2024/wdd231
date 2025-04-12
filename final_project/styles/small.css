@@ -178,6 +178,8 @@ button:hover {
 .activity-card h2 {
     margin: 0 1rem;
     grid-area: name;
+    font-size: 40px;
+    font-family: kanit;
 }
 
 .activity-card img {
@@ -187,22 +189,27 @@ button:hover {
 
 .activity-card .activity-weather {
     grid-area: weather;
+    margin: 0 1rem;
 }
 
 .activity-card .activity-cost {
     grid-area: cost;
+    margin: 0 1rem;
 }
 
 .activity-card .activity-reservation {
     grid-area: reservation;
+    margin: 0 1rem;
 }
 
 .activity-card .activity-age {
     grid-area: age;
+    margin: 0 1rem;
 }
 
 .activity-card .activity-description {
     grid-area: description;
+    margin: 0 1rem;
 }
 
 .active {
@@ -248,6 +255,10 @@ button:hover {
 
 .list p {
     margin: 0 1rem
+}
+
+.list:nth-child(even) {
+    background-color: var(--decorative);
 }
 
 .weather-icon {

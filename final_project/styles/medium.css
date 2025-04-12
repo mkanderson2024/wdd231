@@ -76,6 +76,29 @@
         border-bottom: solid var(--heading-tab-text);
     }
 
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+
+    }
+
+    .grid .activity-card {
+        grid-template-areas:
+            "photograph name"
+            "photograph weather"
+            "photograph cost"
+            "photograph reservation"
+            "photograph age"
+            "photograph description"
+        ;
+    }
+
+    .activity-card img {
+        width: 300px;
+
+    }
+
+
     footer {
         display: flex
     }
